@@ -61,7 +61,6 @@ Apache Spark proves its prowess in efficient big data analysis by drastically re
 ![Pyspark](https://github.com/Ting-DS/Spark_Music_App/blob/main/coef.png)
 
 
-
 ## Licensing, Authors, Acknowledgements
 I would like to extend my sincere gratitude to Sparkify for their contribution in making this valuable resource available to the public. A special acknowledgment goes to Udacity for their exceptional guidance throughout this project. Feel free to utilize the contents of this work, and when doing so, please remember to appropriately attribute the contributions of myself, Udacity, and/or Sparkify. For detailed discussion, follow this blog post: [Link](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
