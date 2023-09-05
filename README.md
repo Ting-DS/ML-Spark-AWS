@@ -1,7 +1,7 @@
 # Spark ML with AWS EMR - Churn Prediction Model using Sparkify Music App Data
 
-<img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/py_spark.png" width="80%" alt="Recommendations with IBM">
 
+![Pyspark](https://github.com/Ting-DS/Spark_Music_App/blob/main/py_spark.png)
 
 The project insights are in the blog post: [Link]
 
