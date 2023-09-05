@@ -36,14 +36,28 @@ Description:
 - **UserAgent**: Information about the client's browser or user agent.
 - **UserId**: Unique identifier for the user.
 
-## Libraries
-### 1. Local machine using Python 3.0 or above:
+## Libraries & Applications
+### 1. Local machine using Python 3.7 or above:
 
 - **pyspark.sql**
-pyspark.sql, pyspark.ml
-pandas
-numpy
-matplotlib
+- **pyspark.ml**
+- **pandas**
+- **numpy**
+- **matplotlib**
+
+### 2. AWS EMR cluster using PySpark kernel:
+
+- **Hadoop 3.2.1**
+- **Hive 3.1.2**
+- **Jupyter Enterprise Gateway 2.1.0**
+- **JupyterHub 1.1.0**
+- **Pig 0.17.0**
+- **Spark 7.0.1**
+
+## Conclusions
+Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes only 10 seconds to load a massive 12GB dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `avg_session_gap`, `total_session`, and `user_age`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction. Noteworthy is the logistic regression model's outstanding predictive performance on the entire dataset, boasting a formidable AUC score of 0.81.
+
+
 
 
 
