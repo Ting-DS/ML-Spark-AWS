@@ -62,8 +62,9 @@ Description:
 ## Conclusions
 Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes only 10 seconds to load a massive 12GB dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `avg_session_gap`, `total_session`, and `user_age`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction. Noteworthy is the logistic regression model's outstanding predictive performance on the entire dataset, boasting a formidable AUC score of 0.81.
 
-![Pyspark](https://github.com/Ting-DS/Spark_Music_App/blob/main/coef.png)
-
+<div align="center">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/coef.png" width="60%">
+</div>
 
 ## Licensing, Authors, Acknowledgements
 I would like to extend my sincere gratitude to Sparkify for their contribution in making this valuable resource available to the public. A special acknowledgment goes to Udacity for their exceptional guidance throughout this project. Feel free to utilize the contents of this work, and when doing so, please remember to appropriately attribute the contributions of myself, Udacity, and/or Sparkify. For detailed discussion, follow this blog post: [Link](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
