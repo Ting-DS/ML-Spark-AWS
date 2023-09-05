@@ -1,4 +1,5 @@
-# Spark ML with AWS EMR - Churn Prediction Model using Sparkify Music App Data
+# Spark ML with AWS EMR
+## Build Churn Prediction Model using Sparkify Music App Data
 
 The project insights are in the blog post: [Link]
 
@@ -57,7 +58,7 @@ Description:
 ## Conclusions
 Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes only 10 seconds to load a massive 12GB dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `avg_session_gap`, `total_session`, and `user_age`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction. Noteworthy is the logistic regression model's outstanding predictive performance on the entire dataset, boasting a formidable AUC score of 0.81.
 
-
+![Pyspark](https://github.com/Ting-DS/Spark_Music_App/blob/main/coef.png)
 
 
 
