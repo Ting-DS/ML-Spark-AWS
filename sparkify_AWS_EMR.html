@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>sparkify_full_12GB</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>sparkify_AWS_EMR</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13971,13 +13971,8 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Sparkify-Project---Music-Streaming-Data">Sparkify Project - Music Streaming Data<a class="anchor-link" href="#Sparkify-Project---Music-Streaming-Data">&#182;</a></h1><p>This project aims to leverage approximate <strong>27,000,000</strong> Sparkify user activity records to predict user churn, identifying those most likely to discontinue their engagement. The process involves the retrieval of the complete <strong>12GB dataset</strong> from <strong>AWS S3</strong> and its subsequent processing on an <strong>AWS EMR cluster</strong>. We employ <strong>Spark</strong> for data wrangling, feature engineering, model training, and hyperparameter tuning.</p>
+<h1 id="Sparkify-Churn-Prediction---Spark---AWS-EMR-Deployment">Sparkify Churn Prediction - Spark - AWS EMR Deployment<a class="anchor-link" href="#Sparkify-Churn-Prediction---Spark---AWS-EMR-Deployment">&#182;</a></h1><p>This project aims to leverage approximate <strong>27,000,000</strong> Sparkify user activity records to predict user churn, identifying those most likely to discontinue their engagement. The process involves the retrieval of the complete <strong>12GB dataset</strong> from <strong>AWS S3</strong> and its subsequent processing on an <strong>AWS EMR cluster</strong>. We employ <strong>Spark</strong> for data wrangling, feature engineering, model training, and hyperparameter tuning.</p>
 
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Import-libraries-from-PySpark-and-Python">Import libraries from PySpark and Python<a class="anchor-link" href="#Import-libraries-from-PySpark-and-Python">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14014,12 +14009,12 @@ a.anchor-link {
 
 
 
-<div id="bba54f6e-d0f9-4b8f-ac4e-ea6a9bc7e3c0" class="jupyter-widgets jp-OutputArea-output ">
+<div id="eae37ec3-8353-4991-8ccf-7210a722b394" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('bba54f6e-d0f9-4b8f-ac4e-ea6a9bc7e3c0');
+var element = document.getElementById('eae37ec3-8353-4991-8ccf-7210a722b394');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "10764e72a3044a61adf2ac4515dd92dd", "version_major": 2, "version_minor": 0}
+{"model_id": "2bdc9a754fe3441db0d4c9caaf670088", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14046,7 +14041,7 @@ var element = document.getElementById('bba54f6e-d0f9-4b8f-ac4e-ea6a9bc7e3c0');
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
 <table>
-<tr><th>ID</th><th>YARN Application ID</th><th>Kind</th><th>State</th><th>Spark UI</th><th>Driver log</th><th>Current session?</th></tr><tr><td>3</td><td>application_1693877095915_0005</td><td>pyspark</td><td>idle</td><td><a target="_blank" href="http://ip-172-31-11-142.us-east-2.compute.internal:20888/proxy/application_1693877095915_0005/" >Link</a></td><td><a target="_blank" href="http://ip-172-31-7-92.us-east-2.compute.internal:8042/node/containerlogs/container_1693877095915_0005_01_000001/livy" >Link</a></td><td>✔</td></tr></table>
+<tr><th>ID</th><th>YARN Application ID</th><th>Kind</th><th>State</th><th>Spark UI</th><th>Driver log</th><th>Current session?</th></tr><tr><td>6</td><td>application_1697312914837_0008</td><td>pyspark</td><td>idle</td><td><a target="_blank" href="http://ip-172-31-7-24.us-east-2.compute.internal:20888/proxy/application_1697312914837_0008/" >Link</a></td><td><a target="_blank" href="http://ip-172-31-1-181.us-east-2.compute.internal:8042/node/containerlogs/container_1697312914837_0008_01_000001/livy" >Link</a></td><td>✔</td></tr></table>
 </div>
 
 </div>
@@ -14062,9 +14057,9 @@ var element = document.getElementById('bba54f6e-d0f9-4b8f-ac4e-ea6a9bc7e3c0');
 
 
 
-<div id="c6124d30-ab0e-4c8d-9c73-b92e04f66d12" class="jupyter-widgets jp-OutputArea-output ">
+<div id="8555629f-73ad-43bf-8258-aad7fca12b1d" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('c6124d30-ab0e-4c8d-9c73-b92e04f66d12');
+var element = document.getElementById('8555629f-73ad-43bf-8258-aad7fca12b1d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14096,9 +14091,9 @@ var element = document.getElementById('c6124d30-ab0e-4c8d-9c73-b92e04f66d12');
 
 
 
-<div id="d54c33fd-c528-4e52-9221-a6c57e1643fc" class="jupyter-widgets jp-OutputArea-output ">
+<div id="69b0e438-23a3-431b-ba08-ae78c8881305" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('d54c33fd-c528-4e52-9221-a6c57e1643fc');
+var element = document.getElementById('69b0e438-23a3-431b-ba08-ae78c8881305');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14114,28 +14109,31 @@ var element = document.getElementById('d54c33fd-c528-4e52-9221-a6c57e1643fc');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python3"><pre><span></span><span class="c1"># Spark SQL</span>
 <span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
-<span class="kn">from</span> <span class="nn">pyspark.sql.functions</span> <span class="kn">import</span> <span class="n">isnan</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">when</span><span class="p">,</span> <span class="n">desc</span><span class="p">,</span> <span class="n">udf</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">sort_array</span><span class="p">,</span> <span class="n">asc</span><span class="p">,</span> <span class="n">avg</span><span class="p">,</span> <span class="n">lit</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="nb">min</span><span class="p">,</span> <span class="n">countDistinct</span>
 <span class="kn">import</span> <span class="nn">pyspark.sql.functions</span> <span class="k">as</span> <span class="nn">F</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql.functions</span> <span class="kn">import</span> <span class="p">(</span><span class="n">avg</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">concat</span><span class="p">,</span> <span class="n">desc</span><span class="p">,</span> <span class="n">lit</span><span class="p">,</span> <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">,</span> <span class="n">split</span><span class="p">,</span>
+                                   <span class="n">udf</span><span class="p">,</span> <span class="n">countDistinct</span><span class="p">,</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">isnan</span><span class="p">,</span> <span class="n">when</span><span class="p">,</span>
+                                   <span class="n">sort_array</span><span class="p">,</span> <span class="n">asc</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">pyspark.sql.window</span> <span class="kn">import</span> <span class="n">Window</span>
-<span class="kn">from</span> <span class="nn">pyspark.sql.types</span> <span class="kn">import</span> <span class="n">IntegerType</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql.types</span> <span class="kn">import</span> <span class="n">IntegerType</span><span class="p">,</span> <span class="n">DoubleType</span>
 
 <span class="c1"># Spark ML</span>
 <span class="kn">from</span> <span class="nn">pyspark.ml</span> <span class="kn">import</span> <span class="n">Pipeline</span>
-<span class="kn">from</span> <span class="nn">pyspark.ml.feature</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StringIndexer</span><span class="p">,</span> <span class="n">VectorAssembler</span>
-<span class="kn">from</span> <span class="nn">pyspark.ml.classification</span> <span class="kn">import</span> <span class="n">LogisticRegression</span><span class="p">,</span> <span class="n">GBTClassifier</span><span class="p">,</span> <span class="n">NaiveBayes</span><span class="p">,</span> <span class="n">LinearSVC</span><span class="p">,</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">pyspark.ml.feature</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StringIndexer</span><span class="p">,</span> <span class="n">VectorAssembler</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">pyspark.ml.classification</span> <span class="kn">import</span> <span class="n">LogisticRegression</span><span class="p">,</span> <span class="n">LinearSVC</span><span class="p">,</span> <span class="n">RandomForestClassifier</span><span class="p">,</span> <span class="n">GBTClassifier</span>
 <span class="kn">from</span> <span class="nn">pyspark.ml.tuning</span> <span class="kn">import</span> <span class="n">CrossValidator</span><span class="p">,</span> <span class="n">ParamGridBuilder</span>
-<span class="kn">from</span> <span class="nn">pyspark.ml.evaluation</span> <span class="kn">import</span> <span class="n">MulticlassClassificationEvaluator</span><span class="p">,</span> <span class="n">BinaryClassificationEvaluator</span>
+<span class="kn">from</span> <span class="nn">pyspark.ml.evaluation</span> <span class="kn">import</span> <span class="n">MulticlassClassificationEvaluator</span>
+<span class="kn">from</span> <span class="nn">pyspark.mllib.evaluation</span> <span class="kn">import</span> <span class="n">MulticlassMetrics</span>
 
-<span class="c1"># Python basic</span>
-<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="c1"># Python</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="kn">import</span> <span class="nn">warnings</span>
+
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -14160,12 +14158,12 @@ var element = document.getElementById('d54c33fd-c528-4e52-9221-a6c57e1643fc');
 
 
 
-<div id="ba70c54f-5c01-4c1e-84e5-9b3ce0ddfc97" class="jupyter-widgets jp-OutputArea-output ">
+<div id="94923687-4689-4e8c-8fbf-a90b686f9206" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('ba70c54f-5c01-4c1e-84e5-9b3ce0ddfc97');
+var element = document.getElementById('94923687-4689-4e8c-8fbf-a90b686f9206');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "2d24ae651ba2473aa724b62945c45bdd", "version_major": 2, "version_minor": 0}
+{"model_id": "212f44e3ea5241b78d13c70d4a926eca", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14182,9 +14180,9 @@ var element = document.getElementById('ba70c54f-5c01-4c1e-84e5-9b3ce0ddfc97');
 
 
 
-<div id="b01b7411-eb4d-48de-aff8-c12694c7e323" class="jupyter-widgets jp-OutputArea-output ">
+<div id="58f0cba6-b050-4d5f-bc21-5b841e7dc655" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('b01b7411-eb4d-48de-aff8-c12694c7e323');
+var element = document.getElementById('58f0cba6-b050-4d5f-bc21-5b841e7dc655');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14200,7 +14198,7 @@ var element = document.getElementById('b01b7411-eb4d-48de-aff8-c12694c7e323');
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Create-a-Spark-session-&amp;-Load-12GB-full-data-from-AWS-S3">Create a Spark session &amp; Load 12GB full data from AWS S3<a class="anchor-link" href="#Create-a-Spark-session-&amp;-Load-12GB-full-data-from-AWS-S3">&#182;</a></h3>
+<h3 id="Load-12GB-full-data-from-AWS-S3">Load 12GB full data from AWS S3<a class="anchor-link" href="#Load-12GB-full-data-from-AWS-S3">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14245,12 +14243,12 @@ var element = document.getElementById('b01b7411-eb4d-48de-aff8-c12694c7e323');
 
 
 
-<div id="e9f652ce-fc85-4bf7-a5be-3c19d15f21f9" class="jupyter-widgets jp-OutputArea-output ">
+<div id="c1135f52-7a56-4c1c-b18d-7a6538e9cf6c" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('e9f652ce-fc85-4bf7-a5be-3c19d15f21f9');
+var element = document.getElementById('c1135f52-7a56-4c1c-b18d-7a6538e9cf6c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "6b1aa967f9204a66955486d063c93270", "version_major": 2, "version_minor": 0}
+{"model_id": "92532d7c70e34994a33ec6623d0820f8", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14267,9 +14265,9 @@ var element = document.getElementById('e9f652ce-fc85-4bf7-a5be-3c19d15f21f9');
 
 
 
-<div id="45eb7795-bdeb-4974-b6cb-1bc776f02ecc" class="jupyter-widgets jp-OutputArea-output ">
+<div id="8c7ab831-712c-4c3b-ba26-08058825859d" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('45eb7795-bdeb-4974-b6cb-1bc776f02ecc');
+var element = document.getElementById('8c7ab831-712c-4c3b-ba26-08058825859d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14299,84 +14297,6 @@ var element = document.getElementById('45eb7795-bdeb-4974-b6cb-1bc776f02ecc');
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="b91f4033-1eaa-44c6-abe8-e2cce6087104" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('b91f4033-1eaa-44c6-abe8-e2cce6087104');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "3883006009c84a97abc29e5f396c4423", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="99ac92ac-a4d9-4e9c-a612-aa5f1ae6894f" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('99ac92ac-a4d9-4e9c-a612-aa5f1ae6894f');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Row(artist=&#39;Popol Vuh&#39;, auth=&#39;Logged In&#39;, firstName=&#39;Shlok&#39;, gender=&#39;M&#39;, itemInSession=278, lastName=&#39;Johnson&#39;, length=524.32934, level=&#39;paid&#39;, location=&#39;Dallas-Fort Worth-Arlington, TX&#39;, method=&#39;PUT&#39;, page=&#39;NextSong&#39;, registration=1533734541000, sessionId=22683, song=&#39;Ich mache einen Spiegel - Dream Part 4&#39;, status=200, ts=1538352001000, userAgent=&#39;&#34;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36&#34;&#39;, userId=&#39;1749042&#39;)</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
 </pre></div>
 
@@ -14401,12 +14321,12 @@ var element = document.getElementById('99ac92ac-a4d9-4e9c-a612-aa5f1ae6894f');
 
 
 
-<div id="6a4ce1f5-ced6-4e21-8b75-5a8964de709c" class="jupyter-widgets jp-OutputArea-output ">
+<div id="78b007c3-a817-4415-b719-527215b9c264" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('6a4ce1f5-ced6-4e21-8b75-5a8964de709c');
+var element = document.getElementById('78b007c3-a817-4415-b719-527215b9c264');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "482915b664d74af496e567bdf1f527b3", "version_major": 2, "version_minor": 0}
+{"model_id": "ee45f4b1bc9e4c5fb1986a4898a96472", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14423,9 +14343,9 @@ var element = document.getElementById('6a4ce1f5-ced6-4e21-8b75-5a8964de709c');
 
 
 
-<div id="3c8240a5-8509-4084-991b-b5314747d1c4" class="jupyter-widgets jp-OutputArea-output ">
+<div id="1a593e0b-9315-49f6-a14c-50605b65d447" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('3c8240a5-8509-4084-991b-b5314747d1c4');
+var element = document.getElementById('1a593e0b-9315-49f6-a14c-50605b65d447');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14470,7 +14390,7 @@ var element = document.getElementById('3c8240a5-8509-4084-991b-b5314747d1c4');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total activity records:&#39;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -14498,12 +14418,12 @@ var element = document.getElementById('3c8240a5-8509-4084-991b-b5314747d1c4');
 
 
 
-<div id="f97dbac1-d4f8-4b12-ac25-909ad252e21c" class="jupyter-widgets jp-OutputArea-output ">
+<div id="4011bcc9-04c1-4460-879a-b727b9fa5324" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('f97dbac1-d4f8-4b12-ac25-909ad252e21c');
+var element = document.getElementById('4011bcc9-04c1-4460-879a-b727b9fa5324');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "058bae0eb14d4857a1118725c2714e5a", "version_major": 2, "version_minor": 0}
+{"model_id": "321a26e57ba24b6caee7c8f2583796ab", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14520,9 +14440,9 @@ var element = document.getElementById('f97dbac1-d4f8-4b12-ac25-909ad252e21c');
 
 
 
-<div id="51665bd7-7504-4907-a73a-e5568bd15cbb" class="jupyter-widgets jp-OutputArea-output ">
+<div id="7db1a203-0429-4152-9103-145f6b012f07" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('51665bd7-7504-4907-a73a-e5568bd15cbb');
+var element = document.getElementById('7db1a203-0429-4152-9103-145f6b012f07');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14550,10 +14470,11 @@ Total columns: 18</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;auth&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">dropDuplicates</span><span class="p">()</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;auth&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Summarize `auth` (Login status of the user)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">countDistinct</span><span class="p">(</span><span class="s1">&#39;userId&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14577,12 +14498,12 @@ Total columns: 18</pre>
 
 
 
-<div id="0f0734c4-67af-4403-aba5-36f54c56ad38" class="jupyter-widgets jp-OutputArea-output ">
+<div id="595dfc05-7af7-499e-b8a4-996405e0f57c" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('0f0734c4-67af-4403-aba5-36f54c56ad38');
+var element = document.getElementById('595dfc05-7af7-499e-b8a4-996405e0f57c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "12469f79045040c1b412f66aca6cc828", "version_major": 2, "version_minor": 0}
+{"model_id": "e4064556b70f47c78ed28ab8337a60f9", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14599,9 +14520,9 @@ var element = document.getElementById('0f0734c4-67af-4403-aba5-36f54c56ad38');
 
 
 
-<div id="2cd7c43c-64aa-41e5-a81a-d9eac0afe0be" class="jupyter-widgets jp-OutputArea-output ">
+<div id="7c742310-43f9-4e25-9380-e9248cf9a56c" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('2cd7c43c-64aa-41e5-a81a-d9eac0afe0be');
+var element = document.getElementById('7c742310-43f9-4e25-9380-e9248cf9a56c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14617,14 +14538,14 @@ var element = document.getElementById('2cd7c43c-64aa-41e5-a81a-d9eac0afe0be');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>+----------+
-|      auth|
-+----------+
-| Cancelled|
-|     Guest|
-| Logged In|
-|Logged Out|
-+----------+</pre>
+<pre>+----------+-------------+
+|      auth|count(userId)|
++----------+-------------+
+|     Guest|            1|
+|Logged Out|            1|
+| Cancelled|         5003|
+| Logged In|        22277|
++----------+-------------+</pre>
 </div>
 </div>
 
@@ -14640,11 +14561,15 @@ var element = document.getElementById('2cd7c43c-64aa-41e5-a81a-d9eac0afe0be');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Exclude &quot;not signed up&quot; user</span>
-<span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;userId&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Filter out Guest and Logged Out to exclude guests</span>
+<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Logged In&#39;</span><span class="p">)</span> <span class="o">|</span>
+                     <span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Cancelled&#39;</span><span class="p">))</span>
+<span class="c1"># Exclude null user_id</span>
+<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;userId&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df_clean</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">countDistinct</span><span class="p">(</span><span class="s1">&#39;userId&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14668,12 +14593,12 @@ var element = document.getElementById('2cd7c43c-64aa-41e5-a81a-d9eac0afe0be');
 
 
 
-<div id="78788b09-55fb-4719-bb77-cd786d2f85f4" class="jupyter-widgets jp-OutputArea-output ">
+<div id="1a7c98a4-6bca-42a0-aade-fed996389127" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('78788b09-55fb-4719-bb77-cd786d2f85f4');
+var element = document.getElementById('1a7c98a4-6bca-42a0-aade-fed996389127');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "8cf1fc1b44d144b2968584c37fa21386", "version_major": 2, "version_minor": 0}
+{"model_id": "9966724ec26849929cc3da252b20c6c6", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14690,9 +14615,93 @@ var element = document.getElementById('78788b09-55fb-4719-bb77-cd786d2f85f4');
 
 
 
-<div id="9e01a90f-d5f8-41e5-b795-effc40bd0aee" class="jupyter-widgets jp-OutputArea-output ">
+<div id="bba204d0-a7ec-4acf-8315-3df5a35c3101" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('9e01a90f-d5f8-41e5-b795-effc40bd0aee');
+var element = document.getElementById('bba204d0-a7ec-4acf-8315-3df5a35c3101');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>+---------+-------------+
+|     auth|count(userId)|
++---------+-------------+
+|Cancelled|         5003|
+|Logged In|        22277|
++---------+-------------+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Check for nulls</span>
+<span class="n">df_clean</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df_clean</span><span class="o">.</span><span class="n">userId</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="cf20f13e-5e42-4962-a7ca-8053372f6d7c" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('cf20f13e-5e42-4962-a7ca-8053372f6d7c');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6b838608243f4caf9d2be0e30f237891", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="58cd34ff-af02-44ef-ab4a-00ecd17e241e" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('58cd34ff-af02-44ef-ab4a-00ecd17e241e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14722,290 +14731,6 @@ var element = document.getElementById('9e01a90f-d5f8-41e5-b795-effc40bd0aee');
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;userId&#39;</span><span class="p">]</span><span class="o">!=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="2b3fa145-e6ec-4538-a864-652138b81c0f" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('2b3fa145-e6ec-4538-a864-652138b81c0f');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "89f63ac5b1484000b8e3a240713956c8", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="8d3b1a8d-aa78-4471-8bb9-ab9b85643434" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('8d3b1a8d-aa78-4471-8bb9-ab9b85643434');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Extract Cancelled User and Logged in user</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Cancelled&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Logged In&#39;</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="67141866-e04b-4a37-8ef4-9fda427372df" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('67141866-e04b-4a37-8ef4-9fda427372df');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "30b8514cfdcd44b8ba22a98bff83e503", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="0683323d-3e89-4e41-9b99-6cb0eb01adf9" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('0683323d-3e89-4e41-9b99-6cb0eb01adf9');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># check missing data</span>
-<span class="c1"># missing_value_counts = df_clean.select([sum(col(column).isNull().cast(&quot;int&quot;)).alias(column + &quot;_missing&quot;) for column in df_clean.columns])</span>
-<span class="c1"># for row in missing_value_counts.collect():</span>
-<span class="c1">#     for column, missing_count in row.asDict().items():</span>
-<span class="c1">#         print(f&quot;{column}: {missing_count}&quot;)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="3386d0e4-7392-46bc-a985-63c555ef0ef4" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('3386d0e4-7392-46bc-a985-63c555ef0ef4');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "4b08ea7ef1b34a338f3fa257da26559c", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="46fb1f55-e1dc-48dc-b89b-dd23b84cbe10" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('46fb1f55-e1dc-48dc-b89b-dd23b84cbe10');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df_clean</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df_clean</span><span class="o">.</span><span class="n">userId</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="aefd33fb-2933-4a72-9727-9f7417f4909e" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('aefd33fb-2933-4a72-9727-9f7417f4909e');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d7b568da461d4290b106109d1e9bf3de", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="f0a06563-6085-4f30-9189-c460e0c9b9a8" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('f0a06563-6085-4f30-9189-c460e0c9b9a8');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>0</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python3"><pre><span></span><span class="n">df_clean</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df_clean</span><span class="o">.</span><span class="n">sessionId</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
@@ -15030,12 +14755,12 @@ var element = document.getElementById('f0a06563-6085-4f30-9189-c460e0c9b9a8');
 
 
 
-<div id="a5ebc37c-60ee-4fa0-af35-ecd3e75bf353" class="jupyter-widgets jp-OutputArea-output ">
+<div id="b592e3ee-b2b4-402c-ab55-5a508cf144fe" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('a5ebc37c-60ee-4fa0-af35-ecd3e75bf353');
+var element = document.getElementById('b592e3ee-b2b4-402c-ab55-5a508cf144fe');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "9d2e69f0d2e1403cac31f5cd07d7ccd7", "version_major": 2, "version_minor": 0}
+{"model_id": "468e572a90414677a89c4e9c5d5711e8", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15052,9 +14777,9 @@ var element = document.getElementById('a5ebc37c-60ee-4fa0-af35-ecd3e75bf353');
 
 
 
-<div id="b7ddf9ce-5677-4507-a378-fe0d10d5af10" class="jupyter-widgets jp-OutputArea-output ">
+<div id="60663383-cec8-4543-9596-1ba87b0ad4dd" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('b7ddf9ce-5677-4507-a378-fe0d10d5af10');
+var element = document.getElementById('60663383-cec8-4543-9596-1ba87b0ad4dd');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15081,23 +14806,18 @@ var element = document.getElementById('b7ddf9ce-5677-4507-a378-fe0d10d5af10');
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>0 missing data (<code>UserId</code> and <code>SessionId</code>)</p>
-<p>Please be aware that the 'artist' and 'songs' columns have more missing values, accounting for about 20% of rows. This is due to the nature of the records, which involve actions such as logging into the service and accessing the homepage.</p>
+<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">&#182;</a></h2><p>Define churn based on the <code>auth</code> (Login status of the user). During the data cleaning process, we noticed that the "Cancelled" status is likely related to customer churn. In the small dataset, the overall churn probability is 23%.</p>
 
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Define-Feature-&amp;-Feature-Engineering">Define Feature &amp; Feature Engineering<a class="anchor-link" href="#Define-Feature-&amp;-Feature-Engineering">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Create outcome column named &quot;cancel&quot;</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;cancel&#39;</span><span class="p">,</span> <span class="n">when</span><span class="p">(</span><span class="n">df_clean</span><span class="p">[</span><span class="s1">&#39;auth&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Cancelled&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">otherwise</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">IntegerType</span><span class="p">()))</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Generate churn 1/0 as binary indicator `cancel` 1/0</span>
+<span class="n">cancel</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">auth</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">auth</span> <span class="o">==</span> <span class="s1">&#39;Cancelled&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
+<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;cancel&#39;</span><span class="p">,</span> <span class="n">cancel</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15121,12 +14841,12 @@ var element = document.getElementById('b7ddf9ce-5677-4507-a378-fe0d10d5af10');
 
 
 
-<div id="91df1d78-64b1-4020-9fab-8faaf2e4f02f" class="jupyter-widgets jp-OutputArea-output ">
+<div id="b543e2b6-9f11-4128-8201-376b03847dbe" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('91df1d78-64b1-4020-9fab-8faaf2e4f02f');
+var element = document.getElementById('b543e2b6-9f11-4128-8201-376b03847dbe');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "74adea798f814e23a692a42dd69d0558", "version_major": 2, "version_minor": 0}
+{"model_id": "d8d61b45f21e43f9a99781fb189ef0d4", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15143,9 +14863,9 @@ var element = document.getElementById('91df1d78-64b1-4020-9fab-8faaf2e4f02f');
 
 
 
-<div id="f4f3f90b-cd65-4fb3-9301-0613044d8591" class="jupyter-widgets jp-OutputArea-output ">
+<div id="f4027039-5eac-4973-a19f-944fb7cd59c3" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('f4f3f90b-cd65-4fb3-9301-0613044d8591');
+var element = document.getElementById('f4027039-5eac-4973-a19f-944fb7cd59c3');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15161,12 +14881,11 @@ var element = document.getElementById('f4f3f90b-cd65-4fb3-9301-0613044d8591');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Convert gender to 1/0. 1 = male</span>
-<span class="n">male</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;Male&#39;</span><span class="p">,</span> <span class="n">male</span><span class="p">(</span><span class="s1">&#39;gender&#39;</span><span class="p">))</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="n">pages</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">,</span><span class="s1">&#39;method&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s1">&#39;method&#39;</span><span class="p">)</span>
+<span class="n">pages</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15190,12 +14909,12 @@ var element = document.getElementById('f4f3f90b-cd65-4fb3-9301-0613044d8591');
 
 
 
-<div id="e0dbf1c0-2e86-40de-8fc0-23fd424d741f" class="jupyter-widgets jp-OutputArea-output ">
+<div id="6cca1adf-7f59-4fc9-a46a-7037a83a291f" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('e0dbf1c0-2e86-40de-8fc0-23fd424d741f');
+var element = document.getElementById('6cca1adf-7f59-4fc9-a46a-7037a83a291f');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "3805b06e5e024bd09a00e15e67d173b1", "version_major": 2, "version_minor": 0}
+{"model_id": "8a6b92bbf50c47b3b8dbf0da7e48a0cf", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15212,9 +14931,114 @@ var element = document.getElementById('e0dbf1c0-2e86-40de-8fc0-23fd424d741f');
 
 
 
-<div id="1f2da09b-f575-487e-b3a0-8bb096542722" class="jupyter-widgets jp-OutputArea-output ">
+<div id="d84532d7-b1d0-4970-801c-77fac0e6c874" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('1f2da09b-f575-487e-b3a0-8bb096542722');
+var element = document.getElementById('d84532d7-b1d0-4970-801c-77fac0e6c874');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>+--------------------+------+--------+
+|                page|method|   count|
++--------------------+------+--------+
+|Cancellation Conf...|   GET|    5003|
+|            Settings|   GET|  147074|
+|               Error|   GET|   25048|
+|                Help|   GET|  129448|
+|                Home|   GET|  933124|
+|               About|   GET|   48377|
+|         Roll Advert|   GET|  385212|
+|             Upgrade|   GET|   50507|
+|           Downgrade|   GET|  184240|
+|              Logout|   PUT|  296005|
+|           Thumbs Up|   PUT| 1151465|
+|    Submit Downgrade|   PUT|    6494|
+|          Add Friend|   PUT|  381664|
+|      Submit Upgrade|   PUT|   15135|
+|              Cancel|   PUT|    5003|
+|       Save Settings|   PUT|   29516|
+|            NextSong|   PUT|20850272|
+|         Thumbs Down|   PUT|  239212|
+|     Add to Playlist|   PUT|  597921|
++--------------------+------+--------+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Feature-Engineering">Feature Engineering<a class="anchor-link" href="#Feature-Engineering">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_clean</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="5cc2b9b4-eb00-4c48-a768-2c419e89f718" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('5cc2b9b4-eb00-4c48-a768-2c419e89f718');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "528b715a8bcf422fb4908e75dfd86dd7", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="82133749-1721-4deb-96c5-c8afa73db618" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('82133749-1721-4deb-96c5-c8afa73db618');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15227,21 +15051,17 @@ var element = document.getElementById('1f2da09b-f575-487e-b3a0-8bb096542722');
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Convert-time-series-data">Convert time series data<a class="anchor-link" href="#Convert-time-series-data">&#182;</a></h3>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">to_date</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">from_unixtime</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;ts&#39;</span><span class="p">)</span><span class="o">/</span><span class="n">lit</span><span class="p">(</span><span class="mi">1000</span><span class="p">))))</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;date_created&#39;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">to_date</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">from_unixtime</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;registration&#39;</span><span class="p">)</span><span class="o">/</span><span class="n">lit</span><span class="p">(</span><span class="mi">1000</span><span class="p">))))</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;user_age&#39;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">datediff</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">),</span> <span class="n">col</span><span class="p">(</span><span class="s1">&#39;date_created&#39;</span><span class="p">)))</span>
-<span class="n">df_clean</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="s1">&#39;user_age&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Calculate user age since registration to the activity date</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">to_date</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">from_unixtime</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;ts&#39;</span><span class="p">)</span><span class="o">/</span><span class="n">lit</span><span class="p">(</span><span class="mi">1000</span><span class="p">))))</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;date_register&#39;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">to_date</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">from_unixtime</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;registration&#39;</span><span class="p">)</span><span class="o">/</span><span class="n">lit</span><span class="p">(</span><span class="mi">1000</span><span class="p">))))</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;user_age&#39;</span><span class="p">,</span> <span class="n">F</span><span class="o">.</span><span class="n">datediff</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">),</span> <span class="n">col</span><span class="p">(</span><span class="s1">&#39;date_register&#39;</span><span class="p">)))</span>
+<span class="n">df_feat</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="s1">&#39;user_age&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15265,12 +15085,12 @@ var element = document.getElementById('1f2da09b-f575-487e-b3a0-8bb096542722');
 
 
 
-<div id="28ef7c83-8d0b-46c0-9419-ad6e3e1c17f0" class="jupyter-widgets jp-OutputArea-output ">
+<div id="62ae02ef-4e05-480e-9741-c2efab1174aa" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('28ef7c83-8d0b-46c0-9419-ad6e3e1c17f0');
+var element = document.getElementById('62ae02ef-4e05-480e-9741-c2efab1174aa');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "776c1adf58a547f6b12c0c15db683855", "version_major": 2, "version_minor": 0}
+{"model_id": "9debe252fd5b4191bd501bae65dda2c2", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15287,9 +15107,9 @@ var element = document.getElementById('28ef7c83-8d0b-46c0-9419-ad6e3e1c17f0');
 
 
 
-<div id="9d6e613f-ef13-40cb-a0f8-93f27e2b017d" class="jupyter-widgets jp-OutputArea-output ">
+<div id="838962aa-4115-4497-948b-e8029e6202cc" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('9d6e613f-ef13-40cb-a0f8-93f27e2b017d');
+var element = document.getElementById('838962aa-4115-4497-948b-e8029e6202cc');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15310,7 +15130,7 @@ var element = document.getElementById('9d6e613f-ef13-40cb-a0f8-93f27e2b017d');
 +-------+-----------------+
 |  count|         25480720|
 |   mean| 65.7917132639894|
-| stddev|41.19433609714086|
+| stddev|41.19433609714087|
 |    min|              -23|
 |    max|              411|
 +-------+-----------------+</pre>
@@ -15321,18 +15141,21 @@ var element = document.getElementById('9d6e613f-ef13-40cb-a0f8-93f27e2b017d');
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Feature-Generation-from-'page'-column">Feature Generation from 'page' column<a class="anchor-link" href="#Feature-Generation-from-'page'-column">&#182;</a></h3>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df_clean</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;page&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">dropDuplicates</span><span class="p">()</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;page&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Get proactive user interactions except for playing songs</span>
+<span class="n">inter</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Thumbs Up&#39;</span><span class="p">,</span> <span class="s1">&#39;Thumbs Down&#39;</span><span class="p">,</span> <span class="s1">&#39;Add to Playlist&#39;</span><span class="p">,</span> <span class="s1">&#39;Add Friend&#39;</span><span class="p">]</span>
+<span class="n">get_interactions</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inter</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
+
+<span class="c1"># Get negative feedback from user</span>
+<span class="n">thumbs_down</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Thumbs Down&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
+
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;interactions&#39;</span><span class="p">,</span> <span class="n">get_interactions</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;thumbs_down&#39;</span><span class="p">,</span> <span class="n">thumbs_down</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15356,12 +15179,12 @@ var element = document.getElementById('9d6e613f-ef13-40cb-a0f8-93f27e2b017d');
 
 
 
-<div id="a0d91bd8-c0d3-4175-8b0c-8a4199c7b85c" class="jupyter-widgets jp-OutputArea-output ">
+<div id="ce8f83a5-3b81-4fce-9128-dede6e58891a" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('a0d91bd8-c0d3-4175-8b0c-8a4199c7b85c');
+var element = document.getElementById('ce8f83a5-3b81-4fce-9128-dede6e58891a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "39a0048950ab465b93ca090cebae58b0", "version_major": 2, "version_minor": 0}
+{"model_id": "e5f0d048f0854762b332de5004878795", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15378,111 +15201,9 @@ var element = document.getElementById('a0d91bd8-c0d3-4175-8b0c-8a4199c7b85c');
 
 
 
-<div id="3d2f1207-6180-42dc-91d1-e468c5666350" class="jupyter-widgets jp-OutputArea-output ">
+<div id="f4348431-dba0-4d56-83bb-1b3a435ae438" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('3d2f1207-6180-42dc-91d1-e468c5666350');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>+--------------------+
-|                page|
-+--------------------+
-|               About|
-|          Add Friend|
-|     Add to Playlist|
-|              Cancel|
-|Cancellation Conf...|
-|           Downgrade|
-|               Error|
-|                Help|
-|                Home|
-|              Logout|
-|            NextSong|
-|         Roll Advert|
-|       Save Settings|
-|            Settings|
-|    Submit Downgrade|
-|      Submit Upgrade|
-|         Thumbs Down|
-|           Thumbs Up|
-|             Upgrade|
-+--------------------+</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Create `Thumbs Down` feature which means negative feedback from user</span>
-<span class="n">Thumbs_Down</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Thumbs Down&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;Thumbs_Down&#39;</span><span class="p">,</span> <span class="n">Thumbs_Down</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="05883f91-f9d9-4fdb-aa61-8d128e7b68df" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('05883f91-f9d9-4fdb-aa61-8d128e7b68df');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "1410dd6d03cf4da0a435dbafbc2feb04", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="690ced4a-6c68-4554-846d-227501e38f6d" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('690ced4a-6c68-4554-846d-227501e38f6d');
+var element = document.getElementById('f4348431-dba0-4d56-83bb-1b3a435ae438');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15498,150 +15219,24 @@ var element = document.getElementById('690ced4a-6c68-4554-846d-227501e38f6d');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Create `songs` feature to calculate number of songs from users</span>
-<span class="n">NextSong</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;NextSong&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;songs&#39;</span><span class="p">,</span> <span class="n">NextSong</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="51f6601a-5b73-4e6d-b1c8-06fcd09f16ee" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('51f6601a-5b73-4e6d-b1c8-06fcd09f16ee');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "3143652b93fa40b094b7d210f5e1ce07", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="835cadef-d226-466f-b208-08e925be85b7" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('835cadef-d226-466f-b208-08e925be85b7');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python3"><pre><span></span><span class="c1"># Create `downgrades` to show if the user ever downgraded</span>
-<span class="n">downgrade</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Submit Downgrade&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;downgraded&#39;</span><span class="p">,</span> <span class="n">downgrade</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
-</pre></div>
+<span class="n">downgraded</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Submit Downgrade&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;downgraded&#39;</span><span class="p">,</span> <span class="n">downgraded</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
 
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="1cdddd30-8562-48e2-b190-c76fe71422c3" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('1cdddd30-8562-48e2-b190-c76fe71422c3');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "29ff986b7a9b440d8c18eeeed46d5698", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="942a295c-7b61-4329-b0eb-2ff62c97fec6" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('942a295c-7b61-4329-b0eb-2ff62c97fec6');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Create `paid` to show if the user ever downgraded</span>
+<span class="c1"># Create `paid` to show if the user ever be &#39;paid&#39; user</span>
 <span class="n">paid</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;paid&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
-<span class="n">df_clean</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;paid&#39;</span><span class="p">,</span> <span class="n">paid</span><span class="p">(</span><span class="s1">&#39;level&#39;</span><span class="p">))</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;paid&#39;</span><span class="p">,</span> <span class="n">paid</span><span class="p">(</span><span class="s1">&#39;level&#39;</span><span class="p">))</span>
+
+<span class="c1"># Create `songs` feature to calculate number of songs from users</span>
+<span class="n">NextSong</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;NextSong&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;songs&#39;</span><span class="p">,</span> <span class="n">NextSong</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">))</span>
+
+<span class="c1"># Convert gender to 1/0. 1 = Female</span>
+<span class="n">female</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">())</span>
+<span class="n">df_feat</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;female&#39;</span><span class="p">,</span> <span class="n">female</span><span class="p">(</span><span class="s1">&#39;gender&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15665,12 +15260,12 @@ var element = document.getElementById('942a295c-7b61-4329-b0eb-2ff62c97fec6');
 
 
 
-<div id="3d256b8c-39fd-4b28-91de-815a8c711ded" class="jupyter-widgets jp-OutputArea-output ">
+<div id="d81de5ab-c771-4068-9782-c87ff8115203" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('3d256b8c-39fd-4b28-91de-815a8c711ded');
+var element = document.getElementById('d81de5ab-c771-4068-9782-c87ff8115203');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "86f03ae8c7484b2e8965a07057b86790", "version_major": 2, "version_minor": 0}
+{"model_id": "bdcd8e453bcd4932840b185754fde2af", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15687,95 +15282,9 @@ var element = document.getElementById('3d256b8c-39fd-4b28-91de-815a8c711ded');
 
 
 
-<div id="65a656dc-80c9-49ea-886a-950475936db8" class="jupyter-widgets jp-OutputArea-output ">
+<div id="1934759a-ae8c-4e01-aa56-dd8624656564" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('65a656dc-80c9-49ea-886a-950475936db8');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Create-new-dataframe-for-churn-prediction---Spark-SQL">Create new dataframe for churn prediction - Spark SQL<a class="anchor-link" href="#Create-new-dataframe-for-churn-prediction---Spark-SQL">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># user information</span>
-<span class="n">df_clean</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;df_clean_temp&quot;</span><span class="p">)</span>
-<span class="n">users</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    SELECT</span>
-<span class="s2">        userId AS userId,</span>
-<span class="s2">        male AS gender,</span>
-<span class="s2">        MAX(user_age) AS user_age,</span>
-<span class="s2">        MAX(paid) AS paid,</span>
-<span class="s2">        MAX(downgraded) AS downgraded,</span>
-<span class="s2">        MAX(cancel) AS canceled</span>
-<span class="s2">    FROM</span>
-<span class="s2">        df_clean_temp</span>
-<span class="s2">    GROUP BY</span>
-<span class="s2">        userId, male, date_created</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="e08f948a-d854-4ff7-bcab-6f836f2cae4f" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('e08f948a-d854-4ff7-bcab-6f836f2cae4f');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e4493c90684a43d6b7996314b5b00db0", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="24da6f19-6847-4a41-964c-cc99cb922cae" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('24da6f19-6847-4a41-964c-cc99cb922cae');
+var element = document.getElementById('1934759a-ae8c-4e01-aa56-dd8624656564');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15791,27 +15300,14 @@ var element = document.getElementById('24da6f19-6847-4a41-964c-cc99cb922cae');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Interaction information by user and session</span>
-<span class="n">df_clean</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;df_clean_temp&quot;</span><span class="p">)</span>
-<span class="n">interaction</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    SELECT</span>
-<span class="s2">        userId AS userId,</span>
-<span class="s2">        sessionId,</span>
-<span class="s2">        MIN(date) AS start_date,</span>
-<span class="s2">        MAX(date) AS end_date,</span>
-<span class="s2">        SUM(Thumbs_Down) AS Thumbs_Down,</span>
-<span class="s2">        SUM(songs) AS songs_num,</span>
-<span class="s2">        COUNT(DISTINCT artist) AS artists_num</span>
-<span class="s2">    FROM</span>
-<span class="s2">        df_clean_temp</span>
-<span class="s2">    GROUP BY</span>
-<span class="s2">        userId, sessionId</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-
-<span class="n">interaction</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="n">user_dims</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;userId&#39;</span><span class="p">,</span><span class="s1">&#39;female&#39;</span><span class="p">,</span><span class="s1">&#39;date_register&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>\
+                                                          <span class="nb">max</span><span class="p">(</span><span class="s1">&#39;user_age&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;user_age&#39;</span><span class="p">),</span>\
+                                                          <span class="nb">max</span><span class="p">(</span><span class="s1">&#39;paid&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;paid_user&#39;</span><span class="p">),</span>\
+                                                          <span class="nb">max</span><span class="p">(</span><span class="s1">&#39;downgraded&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;downgraded_user&#39;</span><span class="p">),</span>\
+                                                          <span class="nb">max</span><span class="p">(</span><span class="s1">&#39;cancel&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;canceled&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15835,12 +15331,12 @@ var element = document.getElementById('24da6f19-6847-4a41-964c-cc99cb922cae');
 
 
 
-<div id="f46ef656-af09-49d3-8675-2dc7bb3ede88" class="jupyter-widgets jp-OutputArea-output ">
+<div id="9a3c3717-bea9-457e-8b26-9be33fcfaaa2" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('f46ef656-af09-49d3-8675-2dc7bb3ede88');
+var element = document.getElementById('9a3c3717-bea9-457e-8b26-9be33fcfaaa2');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d2abfc713c0d4d32883a211bd9e0c053", "version_major": 2, "version_minor": 0}
+{"model_id": "8e16a53067d946a39e6f192d4ce98c75", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15857,9 +15353,77 @@ var element = document.getElementById('f46ef656-af09-49d3-8675-2dc7bb3ede88');
 
 
 
-<div id="58fa4cee-7e2e-48dd-9f23-be019886ddd7" class="jupyter-widgets jp-OutputArea-output ">
+<div id="107865f4-0f4b-472e-b806-c6f90d22fa2b" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('58fa4cee-7e2e-48dd-9f23-be019886ddd7');
+var element = document.getElementById('107865f4-0f4b-472e-b806-c6f90d22fa2b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Inspect Dimensions</span>
+<span class="n">user_dims</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="b17d0062-6c38-4036-bc3b-22c389cd5bfd" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('b17d0062-6c38-4036-bc3b-22c389cd5bfd');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "044e3131fa6b4637976d4e0442622e38", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="2d44d993-4f9f-445a-aba1-a6907b173419" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('2d44d993-4f9f-445a-aba1-a6907b173419');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15875,7 +15439,7 @@ var element = document.getElementById('58fa4cee-7e2e-48dd-9f23-be019886ddd7');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[Row(userId=&#39;1410808&#39;, sessionId=26032, start_date=datetime.date(2018, 10, 1), end_date=datetime.date(2018, 10, 2), Thumbs_Down=1, songs_num=32, artists_num=32)]</pre>
+<pre>[Row(userId=&#39;1736302&#39;, female=1, date_register=datetime.date(2018, 6, 18), user_age=162, paid_user=1, downgraded_user=0, canceled=0)]</pre>
 </div>
 </div>
 
@@ -15886,30 +15450,18 @@ var element = document.getElementById('58fa4cee-7e2e-48dd-9f23-be019886ddd7');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Interaction infomration by user</span>
-<span class="n">interaction</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;measures_temp&quot;</span><span class="p">)</span>
-<span class="n">interaction_user</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    SELECT</span>
-<span class="s2">        userId AS userId,</span>
-<span class="s2">        COUNT(sessionId) AS total_session,</span>
-<span class="s2">        AVG(Thumbs_Down) AS avg_Thumbs_Down,</span>
-<span class="s2">        AVG(songs_num) AS avg_songs,</span>
-<span class="s2">        AVG(artists_num) AS avg_artists_num,</span>
-<span class="s2">        AVG(session_gap) AS avg_session_gap</span>
-<span class="s2">    FROM (</span>
-<span class="s2">        SELECT</span>
-<span class="s2">            *,</span>
-<span class="s2">            LAG(end_date) OVER (PARTITION BY userId ORDER BY start_date) AS prev_end_date,</span>
-<span class="s2">            DATEDIFF(start_date, LAG(end_date) OVER (PARTITION BY userId ORDER BY start_date)) AS session_gap</span>
-<span class="s2">        FROM</span>
-<span class="s2">            measures_temp</span>
-<span class="s2">    ) AS temp</span>
-<span class="s2">    GROUP BY</span>
-<span class="s2">        userId</span>
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Get the aggregates measures by userId &amp; sessionId level</span>
+<span class="n">measures</span> <span class="o">=</span> <span class="n">df_feat</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;userId&#39;</span><span class="p">,</span><span class="s1">&#39;sessionId&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>\
+                                                      <span class="nb">min</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;start_date&#39;</span><span class="p">),</span>\
+                                                      <span class="nb">max</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;end_date&#39;</span><span class="p">),</span>\
+                                                      <span class="nb">sum</span><span class="p">(</span><span class="s1">&#39;interactions&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;interactions&#39;</span><span class="p">),</span>\
+                                                      <span class="nb">sum</span><span class="p">(</span><span class="s1">&#39;thumbs_down&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;thumbs_down&#39;</span><span class="p">),</span>\
+                                                      <span class="nb">sum</span><span class="p">(</span><span class="s1">&#39;songs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;songs&#39;</span><span class="p">),</span>\
+                                                      <span class="nb">sum</span><span class="p">(</span><span class="s1">&#39;length&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;length&#39;</span><span class="p">),</span>\
+                                                      <span class="n">countDistinct</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s1">&#39;c_artist&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15933,12 +15485,12 @@ var element = document.getElementById('58fa4cee-7e2e-48dd-9f23-be019886ddd7');
 
 
 
-<div id="aaaca3e1-23e3-4fdd-bfab-7fe6921f1762" class="jupyter-widgets jp-OutputArea-output ">
+<div id="480dff61-3668-46ee-a6e7-b2704745e23e" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('aaaca3e1-23e3-4fdd-bfab-7fe6921f1762');
+var element = document.getElementById('480dff61-3668-46ee-a6e7-b2704745e23e');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d9e147bd68ed40fd80b5cbfbe9ea02f5", "version_major": 2, "version_minor": 0}
+{"model_id": "8d9d6f31b48e42bca8abd304cb725c65", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15955,9 +15507,9 @@ var element = document.getElementById('aaaca3e1-23e3-4fdd-bfab-7fe6921f1762');
 
 
 
-<div id="8ddcc04e-474d-410f-ac68-5428bd10cd18" class="jupyter-widgets jp-OutputArea-output ">
+<div id="e5f9996f-f188-4dcd-ab95-780e189a300a" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('8ddcc04e-474d-410f-ac68-5428bd10cd18');
+var element = document.getElementById('e5f9996f-f188-4dcd-ab95-780e189a300a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15973,10 +15525,33 @@ var element = document.getElementById('8ddcc04e-474d-410f-ac68-5428bd10cd18');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;users: &#39;</span><span class="p">,</span><span class="n">users</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span><span class="s1">&#39; interaction_user: &#39;</span><span class="p">,</span><span class="n">interaction_user</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Get the date gap between sessions</span>
+<span class="c1"># Get the aggregates measures by userId level</span>
+<span class="n">measures</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;measures_temp&quot;</span><span class="p">)</span>
+<span class="n">measures_agg</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SELECT</span>
+<span class="sd">        userId AS userId,</span>
+<span class="sd">        COUNT(sessionId) AS total_session,</span>
+<span class="sd">        AVG(interactions) AS interactions,</span>
+<span class="sd">        AVG(thumbs_down) AS thumbs_down,</span>
+<span class="sd">        AVG(songs) AS songs,</span>
+<span class="sd">        AVG(length) AS length,</span>
+<span class="sd">        AVG(c_artist) AS artists,</span>
+<span class="sd">        AVG(session_gap) AS session_gap</span>
+<span class="sd">    FROM (</span>
+<span class="sd">        SELECT</span>
+<span class="sd">            *,</span>
+<span class="sd">            LAG(end_date) OVER (PARTITION BY userId ORDER BY start_date) AS prev_end_date,</span>
+<span class="sd">            DATEDIFF(start_date, LAG(end_date) OVER (PARTITION BY userId ORDER BY start_date)) AS session_gap</span>
+<span class="sd">        FROM</span>
+<span class="sd">            measures_temp</span>
+<span class="sd">    ) AS temp</span>
+<span class="sd">    GROUP BY userId</span>
+<span class="sd">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16000,12 +15575,12 @@ var element = document.getElementById('8ddcc04e-474d-410f-ac68-5428bd10cd18');
 
 
 
-<div id="138145e9-a13c-4e22-a2b2-cdb47eba86ca" class="jupyter-widgets jp-OutputArea-output ">
+<div id="a3e0c74e-6543-4557-8e11-c23fb2ad481a" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('138145e9-a13c-4e22-a2b2-cdb47eba86ca');
+var element = document.getElementById('a3e0c74e-6543-4557-8e11-c23fb2ad481a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "34503994f65b47bd8ef764f420ecf69c", "version_major": 2, "version_minor": 0}
+{"model_id": "9d76e7cdf8f34a6c873e9f80cda71b2a", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -16022,9 +15597,77 @@ var element = document.getElementById('138145e9-a13c-4e22-a2b2-cdb47eba86ca');
 
 
 
-<div id="efd58fc0-dcf2-4049-918a-86ba446cedf7" class="jupyter-widgets jp-OutputArea-output ">
+<div id="9cf9ad29-c464-45e7-87cf-f70d8d1293db" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('efd58fc0-dcf2-4049-918a-86ba446cedf7');
+var element = document.getElementById('9cf9ad29-c464-45e7-87cf-f70d8d1293db');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Inspect measures</span>
+<span class="n">measures_agg</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="c58d7e4e-7db1-45a4-b3d0-f6b70051d651" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('c58d7e4e-7db1-45a4-b3d0-f6b70051d651');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7c3469ab760a4706a57d2afdf23a069f", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="321a3f23-bb23-4c4c-b068-0ab3180039fb" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('321a3f23-bb23-4c4c-b068-0ab3180039fb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -16040,7 +15683,7 @@ var element = document.getElementById('efd58fc0-dcf2-4049-918a-86ba446cedf7');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>users:  22277  interaction_user:  22277</pre>
+<pre>[Row(userId=&#39;1001393&#39;, total_session=7, interactions=11.142857142857142, thumbs_down=0.8571428571428571, songs=70.57142857142857, length=17726.613365714285, artists=68.14285714285714, session_gap=9.5)]</pre>
 </div>
 </div>
 
@@ -16051,10 +15694,11 @@ var element = document.getElementById('efd58fc0-dcf2-4049-918a-86ba446cedf7');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">df_model</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">interaction_user</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="s1">&#39;userId&#39;</span><span class="p">)</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Inspect user_dim and measure shape</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;user_dims: &#39;</span><span class="p">,</span> <span class="n">user_dims</span><span class="o">.</span><span class="n">count</span><span class="p">(),</span><span class="s1">&#39; measure_agg: &#39;</span><span class="p">,</span> <span class="n">measures_agg</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 </pre></div>
 
      </div>
@@ -16078,12 +15722,12 @@ var element = document.getElementById('efd58fc0-dcf2-4049-918a-86ba446cedf7');
 
 
 
-<div id="84bb9668-67a8-4800-a3d1-758881b2ede2" class="jupyter-widgets jp-OutputArea-output ">
+<div id="544a4550-2a5f-4195-9e33-b10235aa59c9" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('84bb9668-67a8-4800-a3d1-758881b2ede2');
+var element = document.getElementById('544a4550-2a5f-4195-9e33-b10235aa59c9');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "1e1ca452eedd4ff39b5ce27448e947bd", "version_major": 2, "version_minor": 0}
+{"model_id": "f63c0b064dc7465590f176d13ce58077", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -16100,9 +15744,88 @@ var element = document.getElementById('84bb9668-67a8-4800-a3d1-758881b2ede2');
 
 
 
-<div id="55f4da8f-2404-45b8-9f40-f56c8dbb9e36" class="jupyter-widgets jp-OutputArea-output ">
+<div id="4847c7f6-0c2a-4693-a278-e30d475a0ae7" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('55f4da8f-2404-45b8-9f40-f56c8dbb9e36');
+var element = document.getElementById('4847c7f6-0c2a-4693-a278-e30d475a0ae7');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>user_dims:  22277  measure_agg:  22277</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Join dims and measures_agg</span>
+<span class="n">df_model</span> <span class="o">=</span> <span class="n">user_dims</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">measures_agg</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="s1">&#39;userId&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="c040a3a5-d717-4190-8d9a-c5984f1de518" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('c040a3a5-d717-4190-8d9a-c5984f1de518');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "030cfe8e09654d048f4500c40b91c89c", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="5e978954-e2a8-4f2b-bd8e-81ae49ff24b8" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('5e978954-e2a8-4f2b-bd8e-81ae49ff24b8');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -16123,78 +15846,7 @@ var element = document.getElementById('55f4da8f-2404-45b8-9f40-f56c8dbb9e36');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Assemble Features</span>
-<span class="n">assembler</span> <span class="o">=</span> <span class="n">VectorAssembler</span><span class="p">(</span><span class="n">inputCols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">,</span><span class="s1">&#39;user_age&#39;</span><span class="p">,</span><span class="s1">&#39;paid&#39;</span><span class="p">,</span>\
-                                       <span class="s1">&#39;downgraded&#39;</span><span class="p">,</span><span class="s1">&#39;total_session&#39;</span><span class="p">,</span>\
-                                      <span class="s1">&#39;avg_Thumbs_Down&#39;</span><span class="p">,</span><span class="s1">&#39;avg_artists_num&#39;</span><span class="p">,</span><span class="s1">&#39;avg_session_gap&#39;</span><span class="p">,</span><span class="s1">&#39;avg_songs&#39;</span><span class="p">],</span>\
-                            <span class="n">outputCol</span><span class="o">=</span><span class="s1">&#39;raw_features&#39;</span><span class="p">,</span><span class="n">handleInvalid</span> <span class="o">=</span> <span class="s1">&#39;skip&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="e7ad2fb8-275d-4e45-8b3e-ab43973485bc" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('e7ad2fb8-275d-4e45-8b3e-ab43973485bc');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "f09426c59afd4ae2b8c735ff4a0733c0", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="b3b1aff4-138d-488a-aa0d-364e912c6ff6" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('b3b1aff4-138d-488a-aa0d-364e912c6ff6');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python3"><pre><span></span><span class="n">df_model</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
@@ -16221,12 +15873,12 @@ var element = document.getElementById('b3b1aff4-138d-488a-aa0d-364e912c6ff6');
 
 
 
-<div id="a7a7713c-de70-41d4-8578-70a6e39d3e11" class="jupyter-widgets jp-OutputArea-output ">
+<div id="3848e703-e19a-479e-824c-1e4b47672a42" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('a7a7713c-de70-41d4-8578-70a6e39d3e11');
+var element = document.getElementById('3848e703-e19a-479e-824c-1e4b47672a42');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "84489a06babd46ff85c8093d0a091127", "version_major": 2, "version_minor": 0}
+{"model_id": "a168ab8c16cb4f4f830a5002f17e812b", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -16243,9 +15895,9 @@ var element = document.getElementById('a7a7713c-de70-41d4-8578-70a6e39d3e11');
 
 
 
-<div id="77798b56-c742-4a8e-bf21-18cb24ac2042" class="jupyter-widgets jp-OutputArea-output ">
+<div id="20f50310-05ae-41e3-8800-9cef96b5ed5d" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('77798b56-c742-4a8e-bf21-18cb24ac2042');
+var element = document.getElementById('20f50310-05ae-41e3-8800-9cef96b5ed5d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -16263,16 +15915,19 @@ var element = document.getElementById('77798b56-c742-4a8e-bf21-18cb24ac2042');
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>root
  |-- userId: string (nullable = true)
- |-- gender: integer (nullable = true)
+ |-- female: integer (nullable = true)
+ |-- date_register: date (nullable = true)
  |-- user_age: integer (nullable = true)
- |-- paid: integer (nullable = true)
- |-- downgraded: integer (nullable = true)
+ |-- paid_user: integer (nullable = true)
+ |-- downgraded_user: integer (nullable = true)
  |-- canceled: integer (nullable = true)
  |-- total_session: long (nullable = false)
- |-- avg_Thumbs_Down: double (nullable = true)
- |-- avg_songs: double (nullable = true)
- |-- avg_artists_num: double (nullable = true)
- |-- avg_session_gap: double (nullable = true)</pre>
+ |-- interactions: double (nullable = true)
+ |-- thumbs_down: double (nullable = true)
+ |-- songs: double (nullable = true)
+ |-- length: double (nullable = true)
+ |-- artists: double (nullable = true)
+ |-- session_gap: double (nullable = true)</pre>
 </div>
 </div>
 
@@ -16280,41 +15935,21 @@ var element = document.getElementById('77798b56-c742-4a8e-bf21-18cb24ac2042');
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Logistic-regression">Logistic regression<a class="anchor-link" href="#Logistic-regression">&#182;</a></h3>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># ML pipeline</span>
-<span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">inputCol</span><span class="o">=</span><span class="s2">&quot;raw_features&quot;</span><span class="p">,</span> <span class="n">outputCol</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">)</span>
-<span class="n">preprocess_stages</span> <span class="o">=</span> <span class="p">[</span><span class="n">assembler</span><span class="p">,</span> <span class="n">scaler</span><span class="p">]</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Assemble num Features </span>
+<span class="n">assembler</span> <span class="o">=</span> <span class="n">VectorAssembler</span><span class="p">(</span><span class="n">inputCols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;female&#39;</span><span class="p">,</span><span class="s1">&#39;user_age&#39;</span><span class="p">,</span><span class="s1">&#39;paid_user&#39;</span><span class="p">,</span>\
+                                       <span class="s1">&#39;downgraded_user&#39;</span><span class="p">,</span><span class="s1">&#39;total_session&#39;</span><span class="p">,</span> <span class="s1">&#39;interactions&#39;</span><span class="p">,</span>\
+                                      <span class="s1">&#39;thumbs_down&#39;</span><span class="p">,</span><span class="s1">&#39;length&#39;</span><span class="p">,</span><span class="s1">&#39;session_gap&#39;</span><span class="p">],</span>\
+                            <span class="n">outputCol</span><span class="o">=</span><span class="s1">&#39;NumFeatures&#39;</span><span class="p">,</span><span class="n">handleInvalid</span> <span class="o">=</span> <span class="s1">&#39;skip&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">assembler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_model</span><span class="p">)</span>
 
-<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">labelCol</span><span class="o">=</span><span class="s2">&quot;canceled&quot;</span><span class="p">,</span> <span class="n">featuresCol</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">)</span>
-<span class="n">lr</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">labelCol</span><span class="o">=</span><span class="s2">&quot;canceled&quot;</span><span class="p">,</span> <span class="n">featuresCol</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">)</span>
-
-<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">stages</span><span class="o">=</span><span class="p">[</span><span class="o">*</span><span class="n">preprocess_stages</span><span class="p">,</span> <span class="n">lr</span><span class="p">])</span>
-
-<span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span> <span class="o">=</span> <span class="n">df_model</span><span class="o">.</span><span class="n">randomSplit</span><span class="p">([</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-<span class="n">param_grid</span> <span class="o">=</span> <span class="n">ParamGridBuilder</span><span class="p">()</span> \
-    <span class="o">.</span><span class="n">addGrid</span><span class="p">(</span><span class="n">lr</span><span class="o">.</span><span class="n">regParam</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span> \
-    <span class="o">.</span><span class="n">build</span><span class="p">()</span>
-
-<span class="n">evaluator</span> <span class="o">=</span> <span class="n">BinaryClassificationEvaluator</span><span class="p">(</span><span class="n">rawPredictionCol</span><span class="o">=</span><span class="s2">&quot;rawPrediction&quot;</span><span class="p">,</span> <span class="n">labelCol</span><span class="o">=</span><span class="s2">&quot;canceled&quot;</span><span class="p">,</span> <span class="n">metricName</span><span class="o">=</span><span class="s2">&quot;areaUnderROC&quot;</span><span class="p">)</span>
-
-<span class="n">cross_val</span> <span class="o">=</span> <span class="n">CrossValidator</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span>
-                           <span class="n">estimatorParamMaps</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span>
-                           <span class="n">evaluator</span><span class="o">=</span><span class="n">evaluator</span><span class="p">,</span>
-                           <span class="n">numFolds</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-                           <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">cross_val</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
+<span class="c1"># Use &#39;canceled&#39; as model prediction label</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">withColumnRenamed</span><span class="p">(</span><span class="s1">&#39;canceled&#39;</span><span class="p">,</span><span class="s1">&#39;label&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16338,12 +15973,12 @@ var element = document.getElementById('77798b56-c742-4a8e-bf21-18cb24ac2042');
 
 
 
-<div id="c8d2dc70-b4ef-446a-9412-2f9299ab21d0" class="jupyter-widgets jp-OutputArea-output ">
+<div id="f2b4feea-ac55-4a29-98a7-c01a40407b4a" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('c8d2dc70-b4ef-446a-9412-2f9299ab21d0');
+var element = document.getElementById('f2b4feea-ac55-4a29-98a7-c01a40407b4a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "95dd22cf1b244a19b6ac78214a3b2e02", "version_major": 2, "version_minor": 0}
+{"model_id": "3ac626b6036041588a9562b8d01ec6d4", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -16360,9 +15995,9 @@ var element = document.getElementById('c8d2dc70-b4ef-446a-9412-2f9299ab21d0');
 
 
 
-<div id="1434717e-c10b-4340-93ac-7da583b08f76" class="jupyter-widgets jp-OutputArea-output ">
+<div id="c3fcb832-7765-44b2-b5a8-a52d058e0dbd" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('1434717e-c10b-4340-93ac-7da583b08f76');
+var element = document.getElementById('c3fcb832-7765-44b2-b5a8-a52d058e0dbd');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -16378,20 +16013,14 @@ var element = document.getElementById('1434717e-c10b-4340-93ac-7da583b08f76');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Evaluate</span>
-<span class="n">test_results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
-<span class="n">area_under_roc</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_results</span><span class="p">)</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Get weighted col (solve unbalanced problem)</span>
+<span class="n">balancingRatio</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">/</span> <span class="n">data</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">calculateWeights</span> <span class="o">=</span> <span class="n">udf</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">balancingRatio</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="p">(</span><span class="mi">1</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">balancingRatio</span><span class="p">)),</span> <span class="n">DoubleType</span><span class="p">())</span>
 
-
-<span class="n">best_model</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">bestModel</span>
-<span class="n">best_lr_model</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">stages</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
-<span class="n">best_reg_param</span> <span class="o">=</span> <span class="n">best_lr_model</span><span class="o">.</span><span class="n">getOrDefault</span><span class="p">(</span><span class="s2">&quot;regParam&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best regParam: </span><span class="si">{</span><span class="n">best_reg_param</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Area Under ROC: </span><span class="si">{</span><span class="n">area_under_roc</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;classWeightCol&quot;</span><span class="p">,</span> <span class="n">calculateWeights</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -16415,12 +16044,12 @@ var element = document.getElementById('1434717e-c10b-4340-93ac-7da583b08f76');
 
 
 
-<div id="1b6b71af-2cb3-4544-8638-0f26a9f569e8" class="jupyter-widgets jp-OutputArea-output ">
+<div id="cad76ec9-9a60-44d8-9ca4-bbc125802b0b" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('1b6b71af-2cb3-4544-8638-0f26a9f569e8');
+var element = document.getElementById('cad76ec9-9a60-44d8-9ca4-bbc125802b0b');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "ea0986f41cb14939bb1b0b84fe2c4cc6", "version_major": 2, "version_minor": 0}
+{"model_id": "439d0e479f604f3bbb290610185f4664", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -16437,9 +16066,530 @@ var element = document.getElementById('1b6b71af-2cb3-4544-8638-0f26a9f569e8');
 
 
 
-<div id="3dd5414b-2796-4aaf-84c8-a12f8daf4b3e" class="jupyter-widgets jp-OutputArea-output ">
+<div id="d5ac8e35-40de-4958-a6fd-7af256a184a5" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('3dd5414b-2796-4aaf-84c8-a12f8daf4b3e');
+var element = document.getElementById('d5ac8e35-40de-4958-a6fd-7af256a184a5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Split train/test data</span>
+<span class="n">test</span><span class="p">,</span> <span class="n">validation</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">randomSplit</span><span class="p">([</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="b59579c1-8630-44de-9c05-d73586530906" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('b59579c1-8630-44de-9c05-d73586530906');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b63199428ea54e299e9e3d7d816e9622", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="93e11f71-9cff-4099-93b4-ba9a60df1425" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('93e11f71-9cff-4099-93b4-ba9a60df1425');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Standard Scaler</span>
+<span class="n">standardscaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">(</span><span class="n">inputCol</span><span class="o">=</span><span class="s2">&quot;NumFeatures&quot;</span><span class="p">,</span> <span class="n">outputCol</span><span class="o">=</span><span class="s2">&quot;features&quot;</span><span class="p">,</span> <span class="n">withMean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">withStd</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="b6ec4145-7ee0-46ab-ae08-f10f9fff4282" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('b6ec4145-7ee0-46ab-ae08-f10f9fff4282');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "4351f4ee7684446c925b6f4b2b1ab204", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="96872f0e-89a3-4393-b48e-ad1930af6699" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('96872f0e-89a3-4393-b48e-ad1930af6699');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="k">def</span> <span class="nf">fit_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">paramGrid</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Input: model, paramgrid (optional)</span>
+<span class="sd">    Output: fitted model, prediction on validation set</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">stages</span><span class="o">=</span><span class="p">[</span><span class="n">standardscaler</span><span class="p">,</span> <span class="n">model</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">paramGrid</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">crossval</span> <span class="o">=</span> <span class="n">CrossValidator</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span>
+                          <span class="n">estimatorParamMaps</span><span class="o">=</span><span class="n">paramGrid</span><span class="p">,</span>
+                          <span class="n">evaluator</span><span class="o">=</span><span class="n">MulticlassClassificationEvaluator</span><span class="p">(),</span>
+                          <span class="n">numFolds</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">fitmodel</span> <span class="o">=</span> <span class="n">crossval</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fitmodel</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+    
+    <span class="n">results</span> <span class="o">=</span> <span class="n">fitmodel</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">fitmodel</span><span class="p">,</span> <span class="n">results</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="27487431-44a8-4114-b8d5-8d4f03bb5b4e" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('27487431-44a8-4114-b8d5-8d4f03bb5b4e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "12a2c87c0e4a40afbb0a3fabe5a5b8f0", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="f4eb6734-24b0-4b72-a38d-482e5b32d40a" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('f4eb6734-24b0-4b72-a38d-482e5b32d40a');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Evaluate the model on validation set</span>
+<span class="k">def</span> <span class="nf">val_evaluation</span><span class="p">(</span><span class="n">results</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Input: prediction results</span>
+<span class="sd">    Output: accuracy, precision and recall score</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">predictionAndLabels</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">select</span><span class="p">([</span><span class="s1">&#39;prediction&#39;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">]</span>\
+                                      <span class="p">)</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="n">col</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">DoubleType</span><span class="p">()))</span><span class="o">.</span><span class="n">rdd</span>
+
+    <span class="n">metrics</span> <span class="o">=</span> <span class="n">MulticlassMetrics</span><span class="p">(</span><span class="n">predictionAndLabels</span><span class="p">)</span> <span class="c1"># create confusion matrix to calculate evaluation metrics</span>
+    <span class="n">cm</span><span class="o">=</span><span class="n">metrics</span><span class="o">.</span><span class="n">confusionMatrix</span><span class="p">()</span><span class="o">.</span><span class="n">toArray</span><span class="p">()</span> <span class="c1"># convert confusion matrix to numpy array</span>
+    
+    <span class="c1"># accuracy: (TP+TN)/Total Predictions</span>
+    <span class="c1"># precision: TP/(TP + FP)</span>
+    <span class="c1"># recall: TP/(TP + FN)</span>
+    <span class="c1"># f1 score: 2*(Recall * Precision) / (Recall + Precision)</span>
+    <span class="n">accuracy</span><span class="o">=</span><span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="n">cm</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">precision</span><span class="o">=</span><span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">recall</span><span class="o">=</span><span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">cm</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="n">MulticlassClassificationEvaluator</span><span class="p">()</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+
+    <span class="k">return</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="nb">round</span><span class="p">(</span><span class="n">precision</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="nb">round</span><span class="p">(</span><span class="n">recall</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="4851b49e-df94-4af0-92d1-11b7350705f5" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('4851b49e-df94-4af0-92d1-11b7350705f5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ed5cd9e726ca44b6baad1cca4f9c69b3", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="722b80d1-f79f-4e44-9e38-befb3d297700" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('722b80d1-f79f-4e44-9e38-befb3d297700');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Random-Forest-Tuning">Random Forest Tuning<a class="anchor-link" href="#Random-Forest-Tuning">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
+<span class="n">rf_paramGrid</span> <span class="o">=</span> <span class="n">ParamGridBuilder</span><span class="p">()</span> \
+    <span class="o">.</span><span class="n">addGrid</span><span class="p">(</span><span class="n">rf</span><span class="o">.</span><span class="n">maxDepth</span><span class="p">,[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">])</span>\
+    <span class="o">.</span><span class="n">addGrid</span><span class="p">(</span><span class="n">rf</span><span class="o">.</span><span class="n">numTrees</span><span class="p">,[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">])</span>\
+    <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="1d43dc8e-7e58-4001-8fcc-2038c08653c2" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('1d43dc8e-7e58-4001-8fcc-2038c08653c2');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7db07b53df054e5d90484500f5c4afcc", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="9f1f5da6-9d48-4f22-81f7-68ecf2375f21" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('9f1f5da6-9d48-4f22-81f7-68ecf2375f21');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="n">rfmodel</span><span class="p">,</span> <span class="n">rfresults</span> <span class="o">=</span> <span class="n">fit_model</span><span class="p">(</span><span class="n">rf</span><span class="p">,</span> <span class="n">paramGrid</span> <span class="o">=</span> <span class="n">rf_paramGrid</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="ad32e3f1-5c91-43d2-82d7-fafea1a6c822" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('ad32e3f1-5c91-43d2-82d7-fafea1a6c822');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7cc4e7a97abb4d0b94c3947268e2fe5a", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="5004e4b8-6808-421b-8e01-23f61085bd4b" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('5004e4b8-6808-421b-8e01-23f61085bd4b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="n">brf_index</span> <span class="o">=</span> <span class="n">rfmodel</span><span class="o">.</span><span class="n">avgMetrics</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">rfmodel</span><span class="o">.</span><span class="n">avgMetrics</span><span class="p">))</span>
+<span class="n">brf</span> <span class="o">=</span> <span class="n">rf_paramGrid</span><span class="p">[</span><span class="n">brf_index</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">brf</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="e453547e-8ebc-4ff5-8943-edc36f58bd45" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('e453547e-8ebc-4ff5-8943-edc36f58bd45');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d8800df1aaf64dbb84500dcc8f6a1fcb", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="d99c343e-4e50-4df0-bc1e-db39876f1542" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('d99c343e-4e50-4df0-bc1e-db39876f1542');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -16455,8 +16605,236 @@ var element = document.getElementById('3dd5414b-2796-4aaf-84c8-a12f8daf4b3e');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Best regParam: 0.01
-Area Under ROC: 0.8130784048962069</pre>
+<pre>{Param(parent=&#39;RandomForestClassifier_8d9332fad231&#39;, name=&#39;maxDepth&#39;, doc=&#39;Maximum depth of the tree. (&gt;= 0) E.g., depth 0 means 1 leaf node; depth 1 means 1 internal node + 2 leaf nodes.&#39;): 20, Param(parent=&#39;RandomForestClassifier_8d9332fad231&#39;, name=&#39;numTrees&#39;, doc=&#39;Number of trees to train (&gt;= 1).&#39;): 30}</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RandomForest: f1, accuracy,precision,recall&quot;</span><span class="p">,</span> <span class="n">val_evaluation</span><span class="p">(</span><span class="n">rfresults</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="11526399-d7dd-4862-949f-257a95aab39c" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('11526399-d7dd-4862-949f-257a95aab39c');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bc9108e7b6c748e48a698942265a7a9f", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="a1dc79b3-ca79-4d65-9e2a-ca6e56fff8de" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('a1dc79b3-ca79-4d65-9e2a-ca6e56fff8de');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>RandomForest: f1, accuracy,precision,recall (0.88, 0.97, 0.97, 0.87)</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Extract feature importance from rfmodel</span>
+<span class="n">featImportances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">rfmodel</span><span class="o">.</span><span class="n">bestModel</span><span class="o">.</span><span class="n">stages</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">featureImportances</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="93f714e8-a355-4a29-94ce-b76cd0d0b501" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('93f714e8-a355-4a29-94ce-b76cd0d0b501');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "aa7a485e5bcb4868a98c6089727a43fe", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="f6cfe8a1-4810-4b5f-af5e-04b57bb8492a" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('f6cfe8a1-4810-4b5f-af5e-04b57bb8492a');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Extract feature names from the original data</span>
+<span class="n">dict_feats</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">schema</span><span class="p">[</span><span class="s1">&#39;NumFeatures&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;ml_attr&#39;</span><span class="p">][</span><span class="s1">&#39;attrs&#39;</span><span class="p">][</span><span class="s1">&#39;numeric&#39;</span><span class="p">]</span>
+<span class="n">list_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dict_feats</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_feats</span><span class="p">,</span><span class="n">featImportances</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="5548c0f5-8060-490e-bad0-eeddc7cb1297" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('5548c0f5-8060-490e-bad0-eeddc7cb1297');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "eef1b88d4e9547e7a3a11fff55486185", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="27fd40be-6def-4665-b907-ec570e69d3e1" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('27fd40be-6def-4665-b907-ec570e69d3e1');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;female&#39; &#39;user_age&#39; &#39;paid_user&#39; &#39;downgraded_user&#39; &#39;total_session&#39;
+ &#39;interactions&#39; &#39;thumbs_down&#39; &#39;length&#39; &#39;session_gap&#39;] [0.02346042 0.26185797 0.01178645 0.01482874 0.1897405  0.08458735
+ 0.08593863 0.08390108 0.24389885]</pre>
 </div>
 </div>
 
@@ -16467,36 +16845,17 @@ Area Under ROC: 0.8130784048962069</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Random-Forest">Random Forest<a class="anchor-link" href="#Random-Forest">&#182;</a></h3>
+<h3 id="Logistic-Regression-Tuning">Logistic Regression Tuning<a class="anchor-link" href="#Logistic-Regression-Tuning">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[335]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="c1"># ML pipeline</span>
-<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">stages</span><span class="o">=</span><span class="p">[</span><span class="o">*</span><span class="n">preprocess_stages</span><span class="p">,</span> <span class="n">rf</span><span class="p">])</span>
-
-<span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span> <span class="o">=</span> <span class="n">df_model</span><span class="o">.</span><span class="n">randomSplit</span><span class="p">([</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-<span class="n">param_grid</span> <span class="o">=</span> <span class="n">ParamGridBuilder</span><span class="p">()</span> \
-    <span class="o">.</span><span class="n">addGrid</span><span class="p">(</span><span class="n">rf</span><span class="o">.</span><span class="n">maxDepth</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span> \
-    <span class="o">.</span><span class="n">build</span><span class="p">()</span>
-
-<span class="n">evaluator</span> <span class="o">=</span> <span class="n">BinaryClassificationEvaluator</span><span class="p">(</span><span class="n">rawPredictionCol</span><span class="o">=</span><span class="s2">&quot;rawPrediction&quot;</span><span class="p">,</span> <span class="n">labelCol</span><span class="o">=</span><span class="s2">&quot;canceled&quot;</span><span class="p">,</span> <span class="n">metricName</span><span class="o">=</span><span class="s2">&quot;areaUnderROC&quot;</span><span class="p">)</span>
-
-<span class="n">cross_val</span> <span class="o">=</span> <span class="n">CrossValidator</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span>
-                           <span class="n">estimatorParamMaps</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span>
-                           <span class="n">evaluator</span><span class="o">=</span><span class="n">evaluator</span><span class="p">,</span>
-                           <span class="n">numFolds</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-                           <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-<span class="n">rf_model</span> <span class="o">=</span> <span class="n">cross_val</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
-
-<span class="c1"># evaluate</span>
-<span class="n">test_results</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
-<span class="n">area_under_roc</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_results</span><span class="p">)</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># With weight col</span>
+<span class="n">lr_w</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">maxIter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">weightCol</span> <span class="o">=</span> <span class="s1">&#39;classWeightCol&#39;</span><span class="p">)</span>
+<span class="n">lrmodel_w</span><span class="p">,</span> <span class="n">lrresults_w</span> <span class="o">=</span> <span class="n">fit_model</span><span class="p">(</span><span class="n">lr_w</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16515,9 +16874,42 @@ Area Under ROC: 0.8130784048962069</pre>
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>                                                                                </pre>
+
+
+
+
+
+<div id="2a0e8963-efd3-48cc-8c26-8530e6730cdb" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('2a0e8963-efd3-48cc-8c26-8530e6730cdb');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "17411e228f934b89bbc4682531d4ee8f", "version_major": 2, "version_minor": 0}
+</script>
 </div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="fb4e4fde-fa30-41a4-b1fb-5d33b3294139" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('fb4e4fde-fa30-41a4-b1fb-5d33b3294139');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
 </div>
 
 </div>
@@ -16527,16 +16919,10 @@ Area Under ROC: 0.8130784048962069</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[336]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python3"><pre><span></span><span class="n">best_model</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">bestModel</span>
-<span class="n">best_rf_model</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">stages</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">best_rf_param</span> <span class="o">=</span> <span class="n">best_rf_model</span><span class="o">.</span><span class="n">getOrDefault</span><span class="p">(</span><span class="s2">&quot;maxDepth&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Best maxDepth: </span><span class="si">{</span><span class="n">best_rf_param</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Area Under ROC: </span><span class="si">{</span><span class="n">area_under_roc</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class=" highlight hl-python3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LogisticRegression with class weight: f1,accuracy,precision,recall&quot;</span><span class="p">,</span> <span class="n">val_evaluation</span><span class="p">(</span><span class="n">lrresults_w</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -16548,6 +16934,50 @@ Area Under ROC: 0.8130784048962069</pre>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="5f4a90f0-193c-43b0-9c27-37d097e8bf65" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('5f4a90f0-193c-43b0-9c27-37d097e8bf65');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "ba7a795e6c104610bd984c0ded8cbb87", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="b84211ed-2b89-4993-94f5-e03d086a49a4" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('b84211ed-2b89-4993-94f5-e03d086a49a4');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
 
 <div class="jp-OutputArea-child">
 
@@ -16556,9 +16986,7 @@ Area Under ROC: 0.8130784048962069</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Best maxDepth: 10
-Area Under ROC: 0.787267080745342
-</pre>
+<pre>LogisticRegression with class weight: f1,accuracy,precision,recall (0.75, 0.74, 0.44, 0.78)</pre>
 </div>
 </div>
 
@@ -16566,6 +16994,93 @@ Area Under ROC: 0.787267080745342
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python3"><pre><span></span><span class="c1"># Get coefficients</span>
+<span class="n">lr_corr</span> <span class="o">=</span> <span class="n">lrmodel_w</span><span class="o">.</span><span class="n">stages</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">coefficients</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_feats</span><span class="p">,</span> <span class="n">lr_corr</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="754c875e-c67f-4bc2-9ccb-3a1ba05111f4" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('754c875e-c67f-4bc2-9ccb-3a1ba05111f4');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "26bbd3fa983b4c5bbe7eaf6712ea10be", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="f1b23c36-d991-4625-80c3-eb4957455cd8" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('f1b23c36-d991-4625-80c3-eb4957455cd8');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;female&#39; &#39;user_age&#39; &#39;paid_user&#39; &#39;downgraded_user&#39; &#39;total_session&#39;
+ &#39;interactions&#39; &#39;thumbs_down&#39; &#39;length&#39; &#39;session_gap&#39;] [-0.018579235553713488,-0.4952864228478297,0.19108230985204852,-0.055479250750583006,-0.5741988216779174,-0.9857262013678154,0.5285386711079961,0.55382200631948,-1.887944882574658]</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Note:">Note:<a class="anchor-link" href="#Note:">&#182;</a></h4><p>Detailed visualizations, exploratory data analysis, and model selection processes are documented in the <code>sparkify_mini_data_exploration.ipynb</code> file. This file is focused on processing the full 12GB dataset on AWS EMR and simplifies the data exploration process.</p>
+
+</div>
 </div>
 </body>
 
