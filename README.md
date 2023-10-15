@@ -1,7 +1,7 @@
 # Spark ML with AWS EMR
 ## Build Churn Prediction Model using Sparkify Music App Data
 
-The project insights are in the blog post: [Link](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+The project insights are wrangled in this [Medium blog post](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
 ## Introduction
 Sparkify is a music streaming service where users can listen to music, share content, and choose to become paid subscribers. Retaining users is crucial for the company's success, and employing strategies such as offering discounts or implementing other business tactics to potentially churned users can help the company maintain substantial revenue. Therefore, it is imperative to build a machine learning classification model based on user interactions with the platform to **predict churn risk**. Sparkify provides comprehensive user behavior data, totaling **12GB in size**. Analyzing such massive data locally poses a challenge, which is why **Apache Spark** is my preferred analysis tool. Deploying data science pipelines on Spark allows us to leverage distributed systems like **HDFS** to enhance the scalability of our models. **Spark SQL and Spark DataFrame** can be utilized for data cleansing, while **Spark ML** supports algorithms like **Logistic Regression**, **Random Forests**, and other linear expansion models.
@@ -9,6 +9,10 @@ Sparkify is a music streaming service where users can listen to music, share con
 
 <div align="center">
   <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/py_spark.png" width="60%">
+</div>
+
+<div align="center">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/spark_process.png" width="60%">
 </div>
 
 
