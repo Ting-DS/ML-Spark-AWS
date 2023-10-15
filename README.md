@@ -1,7 +1,7 @@
 # Spark with AWS EMR
 ## Predict User Churn using Sparkify Music App activities Data
 
-The project insights are wrangled in this [Medium blog post](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+The project insights are wrangled in this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
 ## Introduction
 Sparkify is a music streaming service where users can listen to music, share content, and choose to become paid subscribers. Retaining users is crucial for the company's success, and employing strategies such as offering discounts or implementing other business tactics to potentially churned users can help the company maintain substantial revenue. Therefore, it is imperative to build a machine learning classification model based on user interactions with the platform to **predict churn risk**. Sparkify provides comprehensive user behavior data, totaling **12GB in size**. Analyzing such massive data locally poses a challenge, which is why [Apache Spark](https://spark.apache.org/) is my preferred analysis tool. Deploying data science pipelines on Spark allows us to leverage distributed systems like [HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Introduction) to enhance the scalability of our models. [Spark SQL and Spark DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html) can be utilized for data cleaning, while [Spark ML](https://spark.apache.org/docs/latest/ml-guide.html) supports algorithms like **Logistic Regression, Random Forest, Linear SVM, Gradient Boosting** and other linear expansion models.
@@ -88,7 +88,8 @@ Apache Spark proves its prowess in efficient big data analysis by drastically re
 ## Licensing, Authors, Acknowledgements
 I would like to extend my sincere gratitude to Sparkify for their contribution in making this valuable resource available to the public. A special acknowledgment goes to Udacity for their exceptional guidance throughout this project. Feel free to utilize the contents of this work, and when doing so, please remember to appropriately attribute the contributions of myself, and/or Sparkify. 
 
-For detailed discussion, follow this [medium blog post](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+For detailed discussion, follow this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+
 ## Reference
  - [Apache Spark](https://spark.apache.org/)
  - [HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Introduction)
@@ -97,5 +98,5 @@ For detailed discussion, follow this [medium blog post](https://medium.com/@Lobs
  - [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
  - [Amazon Elastic MapReduce (Amazon EMR) ](https://www.amazonaws.cn/en/elasticmapreduce/) and [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828)
  - [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828)
- - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)_
+ - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
 
