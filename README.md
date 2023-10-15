@@ -1,14 +1,14 @@
-# Spark ML with AWS EMR
-## Build Churn Prediction Model using Sparkify Music App Data
+# Spark with AWS EMR
+## Predict User Churn using Sparkify Music App activities Data
 
 The project insights are wrangled in this [Medium blog post](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
 ## Introduction
-Sparkify is a music streaming service where users can listen to music, share content, and choose to become paid subscribers. Retaining users is crucial for the company's success, and employing strategies such as offering discounts or implementing other business tactics to potentially churned users can help the company maintain substantial revenue. Therefore, it is imperative to build a machine learning classification model based on user interactions with the platform to **predict churn risk**. Sparkify provides comprehensive user behavior data, totaling **12GB in size**. Analyzing such massive data locally poses a challenge, which is why **Apache Spark** is my preferred analysis tool. Deploying data science pipelines on Spark allows us to leverage distributed systems like **HDFS** to enhance the scalability of our models. **Spark SQL and Spark DataFrame** can be utilized for data cleansing, while **Spark ML** supports algorithms like **Logistic Regression**, **Random Forest**, and other linear expansion models.
+Sparkify is a music streaming service where users can listen to music, share content, and choose to become paid subscribers. Retaining users is crucial for the company's success, and employing strategies such as offering discounts or implementing other business tactics to potentially churned users can help the company maintain substantial revenue. Therefore, it is imperative to build a machine learning classification model based on user interactions with the platform to **predict churn risk**. Sparkify provides comprehensive user behavior data, totaling **12GB in size**. Analyzing such massive data locally poses a challenge, which is why [Apache Spark](https://spark.apache.org/) is my preferred analysis tool. Deploying data science pipelines on Spark allows us to leverage distributed systems like [HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Introduction) to enhance the scalability of our models. [Spark SQL and Spark DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html) can be utilized for data cleaning, while [Spark ML](https://spark.apache.org/docs/latest/ml-guide.html) supports algorithms like **Logistic Regression, Random Forest, Linear SVM, Gradient Boosting** and other linear expansion models.
 
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/py_spark.png" width="80%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/AWS_EMR.png" width="80%">
 </div>
 
 <div align="center">
@@ -17,33 +17,33 @@ Sparkify is a music streaming service where users can listen to music, share con
 
 
 
-In this project, we will utilize relevant services on the AWS platform. We'll begin by loading the entire 12GB dataset (around **27,000,000 records with 18 fields**) from **AWS S3**. Subsequently, we will employ cloud services such as **AWS EMR** and AWS EC2 to deploy ETL and ML pipelines, utilizing Spark for data analysis. This approach will significantly improve data processing efficiency and scalability, enabling us to better predict user churn risk and take corresponding measures to retain them.
+In this project, we will utilize relevant services on the AWS platform. We'll begin by loading the entire 12GB dataset (around **27,000,000 records with 18 fields**) from [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html). Subsequently, we will employ cloud services such as [Amazon Elastic MapReduce (Amazon EMR) ](https://www.amazonaws.cn/en/elasticmapreduce/) and [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828) to deploy ETL and ML pipelines, utilizing Spark for data analysis. This approach will significantly improve data processing efficiency and scalability, enabling us to better predict user churn risk and take corresponding measures to retain them.
 
 ## Data Source
 
-To access full fataset in AWS S3: "s3n://udacity-dsnd/sparkify/sparkify_event_data.json"
+To access full 12GB fataset in AWS S3: "s3n://udacity-dsnd/sparkify/sparkify_event_data.json"
 
 The full dataset contains 26,259,199 records and 18 columns.
 
 Description:
-- **Artist**: Composer or artist of the song.
-- **Auth**: Login status of the user.
-- **firstName**: First name of the user.
-- **gender**: Gender of the user.
-- **ItemInSession**: Operation sequence number of this session, ordered from small to large based on time.
-- **lastName**: Surname or last name of the user.
-- **length**: Length of the song in seconds.
-- **Level**: Indicates whether the user is a paid user.
-- **location**: User's location.
-- **method**: HTTP method used to access web pages (e.g., PUT or GET).
-- **page**: Type of page or action being performed.
-- **registration**: Timestamp representing the user's registration point in time.
-- **sessionId**: Session ID used to identify a single login session.
-- **song**: Name of the song being played or interacted with.
-- **status**: HTTP page return code (e.g., 200, 307, 404).
-- **ts**: Timestamp of the log entry.
-- **UserAgent**: Information about the client's browser or user agent.
-- **UserId**: Unique identifier for the user.
+ - **Artist**: Composer or artist of the song.
+ - **Auth**: Login status of the user.
+ - **firstName**: First name of the user.
+ - **gender**: Gender of the user.
+ - **ItemInSession**: Operation sequence number of this session, ordered from small to large based on time.
+ - **lastName**: Surname or last name of the user.
+ - **length**: Length of the song in seconds.
+ - **Level**: Indicates whether the user is a paid user.
+ - **location**: User's location.
+ - **method**: HTTP method used to access web pages (e.g., PUT or GET).
+ - **page**: Type of page or action being performed.
+ - **registration**: Timestamp representing the user's registration point in time.
+ - **sessionId**: Session ID used to identify a single login session.
+ - **song**: Name of the song being played or interacted with.
+ - **status**: HTTP page return code (e.g., 200, 307, 404).
+ - **ts**: Timestamp of the log entry.
+ - **UserAgent**: Information about the client's browser or user agent.
+ - **UserId**: Unique identifier for the user.
 
 ## Libraries & Applications
 ### 1. Local machine using Python 3.7 or above:
@@ -88,5 +88,14 @@ Apache Spark proves its prowess in efficient big data analysis by drastically re
 ## Licensing, Authors, Acknowledgements
 I would like to extend my sincere gratitude to Sparkify for their contribution in making this valuable resource available to the public. A special acknowledgment goes to Udacity for their exceptional guidance throughout this project. Feel free to utilize the contents of this work, and when doing so, please remember to appropriately attribute the contributions of myself, and/or Sparkify. 
 
-For detailed discussion, follow this medium blog post: [Link](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+For detailed discussion, follow this [medium blog post](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+## Reference
+ - [Apache Spark](https://spark.apache.org/)
+ - [HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Introduction)
+ - [Spark SQL and Spark DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+ - [Spark ML](https://spark.apache.org/docs/latest/ml-guide.html)
+ - [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+ - [Amazon Elastic MapReduce (Amazon EMR) ](https://www.amazonaws.cn/en/elasticmapreduce/) and [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828)
+ - [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828)
+ - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)_
 
