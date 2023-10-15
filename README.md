@@ -1,4 +1,4 @@
-# Spark with AWS EMR
+# Spark ML with AWS EMR
 ## Predict User Churn using Sparkify Music App activities Data
 
 The project insights are wrangled in this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
