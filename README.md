@@ -1,7 +1,9 @@
 # Spark ML with AWS EMR
 ## Predict User Churn using Sparkify Music App activities Data
 
-The project insights are wrangled in this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+The project detailed insights are wrangled in this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
+A small subset(128MB) of the full data (12GB) is used for initial analysis and model development: [sparkify_mini_data_exploration.ipynb](https://github.com/Ting-DS/Spark_AWS_EMR/blob/main/sparkify_mini_data_exploration.ipynb)
+Once the features and models are selected, the script can be deployed to AWS EMR to build the model on the full 12GB dataset: [sparkify_AWS_EMR.ipynb](https://github.com/Ting-DS/Spark_AWS_EMR/blob/main/sparkify_AWS_EMR.ipynb)
 
 ## Introduction
 Sparkify is a music streaming service where users can listen to music, share content, and choose to become paid subscribers. Retaining users is crucial for the company's success, and employing strategies such as offering discounts or implementing other business tactics to potentially churned users can help the company maintain substantial revenue. Therefore, it is imperative to build a machine learning classification model based on user interactions with the platform to **predict churn risk**. Sparkify provides comprehensive user behavior data, totaling **12GB in size**. Analyzing such massive data locally poses a challenge, which is why [Apache Spark](https://spark.apache.org/) is my preferred analysis tool. Deploying data science pipelines on Spark allows us to leverage distributed systems like [HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Introduction) to enhance the scalability of our models. [Spark SQL and Spark DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html) can be utilized for data cleaning, while [Spark ML](https://spark.apache.org/docs/latest/ml-guide.html) supports algorithms like **Logistic Regression, Random Forest, Linear SVM, Gradient Boosting** and other linear expansion models.
