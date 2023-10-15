@@ -64,7 +64,7 @@ Description:
 - **Spark 7.0.1**
 
 ## Conclusions
-Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes only 10 seconds to load a massive 12GB dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `avg_session_gap`, `total_session`, and `user_age`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction. Noteworthy is the logistic regression model's outstanding predictive performance on the entire dataset, boasting a formidable AUC score of 0.81.
+Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes **only 10 seconds to load a massive 12GB** dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `session_gap`, `total_session`, and `interactions`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction. 
 
 <div align="center">
   <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/LR_coef.png" width="100%">
