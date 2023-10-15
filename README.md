@@ -78,11 +78,11 @@ Apache Spark proves its prowess in efficient big data analysis by drastically re
 </div>
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/model.png" width="100%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/model.png" width="60%">
 </div>
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/LR_weight.png" width="100%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/LR_weight.png" width="60%">
 </div>
 
 ## Licensing, Authors, Acknowledgements
