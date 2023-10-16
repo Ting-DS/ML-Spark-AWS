@@ -12,11 +12,15 @@ Sparkify is a music streaming service where users can listen to music, share con
 
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/AWS_EMR.png" width="80%">
+
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/AWS_EMR.png" width="80%">
+
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/py_spark.png" width="80%">
+
 </div>
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/spark_progress.png" width="100%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/spark_progress.png" width="100%">
 </div>
 
 
@@ -60,7 +64,7 @@ Description:
 
 ### 2. AWS EMR cluster using PySpark kernel:
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/AWS_config.png" width="100%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/AWS_config.png" width="100%">
 </div>
 
 - **Hadoop 3.2.1**
@@ -71,26 +75,27 @@ Description:
 - **Spark 7.0.1**
 
 ## Conclusions
-Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes **only 10 seconds to load a massive 12GB** dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `session_gap`, `total_session`, and `interactions`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction. 
+Apache Spark proves its prowess in efficient big data analysis by drastically reducing processing time through distributed computing. Remarkably, it takes **only 10 seconds to load a massive 12GB** dataset into memory. The frequency of Sparkify service usage, as reflected in metrics like `session_gap`, `total_session`, and `interactions`, alongside user activity on the platform - especially `thumbs_down` - emerge as significant factors influencing churn prediction.
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/LR_coef.png" width="100%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/LR_coef.png" width="100%">
 </div>
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/RF_Feat.png" width="100%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/RF_Feat.png" width="100%">
 </div>
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/model.png" width="60%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/model.png" width="60%">
 </div>
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/LR_weight.png" width="60%">
+  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/LR_weight.png" width="60%">
 </div>
 
 ## Licensing, Authors, Acknowledgements
-I would like to extend my sincere gratitude to Sparkify for their contribution in making this valuable resource available to the public. A special acknowledgment goes to Udacity for their exceptional guidance throughout this project. Feel free to utilize the contents of this work, and when doing so, please remember to appropriately attribute the contributions of myself, and/or Sparkify. 
+I would like to extend my sincere gratitude to Sparkify for their contribution in making this valuable resource available to the public. A special acknowledgment goes to Udacity for their exceptional guidance throughout this project. Feel free to utilize the contents of this work, and when doing so, please remember to appropriately attribute the contributions of myself, and/or Sparkify.
+
 
 For detailed discussion, follow this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
@@ -103,4 +108,7 @@ For detailed discussion, follow this Medium blog post: [“Spark ML with AWS EMR
  - [Amazon Elastic MapReduce (Amazon EMR) ](https://www.amazonaws.cn/en/elasticmapreduce/) and [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828)
  - [AWS EC2](https://aws.amazon.com/pm/ec2/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=EAIaIQobChMIqb-QroD3gQMV9y6zAB1ZyAzkEAAYASAAEgLbt_D_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!aws%20ec2!11198711716!118263955828)
  - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
+
+
+For detailed discussion, follow this medium blog post: [Link](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
