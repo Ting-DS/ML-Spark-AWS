@@ -15,8 +15,6 @@ Sparkify is a music streaming service where users can listen to music, share con
 
   <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/AWS_EMR.png" width="80%">
 
-  <img src="https://github.com/Ting-DS/Spark_Music_App/blob/main/image/py_spark.png" width="80%">
-
 </div>
 
 <div align="center">
