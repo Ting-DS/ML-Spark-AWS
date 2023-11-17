@@ -3,7 +3,7 @@
 
 Analysis process and insights are wrangled in this Medium blog post: [“Spark ML with AWS EMR”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
-A small subset(128MB) of the full data **(12GB)** is used for initial analysis and model development: [sparkify_mini_data_exploration.ipynb](https://github.com/Ting-DS/Spark_AWS_EMR/blob/main/sparkify_mini_data_exploration.ipynb)
+A small subset (128MB) of the full data **(12GB)** is used for initial analysis and model development: [sparkify_mini_data_exploration.ipynb](https://github.com/Ting-DS/Spark_AWS_EMR/blob/main/sparkify_mini_data_exploration.ipynb)
 
 Once the features and models are selected, the script can be deployed to AWS EMR to build the model on the full 12GB dataset: [sparkify_AWS_EMR.ipynb](https://github.com/Ting-DS/Spark_AWS_EMR/blob/main/sparkify_AWS_EMR.ipynb)
 
