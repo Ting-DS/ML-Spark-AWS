@@ -1,5 +1,5 @@
 # Big Data Analysis with Spark & AWS Elastic MapReduce
-## Build user churn prediction model using Sparkify music app user activities data
+## Build user churn prediction model using 12GB music app user activities data
 
 Analysis process and insights are wrangled in [“my Medium blog post”](https://medium.com/@LobsterTing/spark-ml-with-aws-emr-acdfab30ef01)
 
